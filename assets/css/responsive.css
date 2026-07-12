@@ -51,7 +51,7 @@
     direction: ltr;
   }
 
-  .project-card__image {
+  .project-image {
     aspect-ratio: 16 / 9;
   }
 
@@ -74,7 +74,7 @@
   }
 
   /* Hide desktop nav */
-  .nav-links {
+  .nav-menu {
     display: none;
   }
 
@@ -242,15 +242,15 @@
     grid-template-columns: 1fr;
   }
 
-  .project-card__content {
+  .project-content {
     padding: 20px;
   }
 
-  .project-card__buttons {
+  .project-links {
     flex-direction: column;
   }
 
-  .project-card__buttons .btn {
+  .project-links .btn {
     width: 100%;
     justify-content: center;
   }
