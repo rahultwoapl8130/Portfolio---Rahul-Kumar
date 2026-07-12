@@ -1,0 +1,104 @@
+/* ===================================================================
+   0. GOOGLE FONTS IMPORT
+   =================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===================================================================
+   1. CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+   =================================================================== */
+:root {
+  /* ── Dark Theme (Default) ── */
+  --bg-primary:       #0a0a1a;
+  --bg-secondary:     #111128;
+  --bg-tertiary:      #1a1a3e;
+  --bg-card:          rgba(255, 255, 255, 0.05);
+  --bg-glass:         rgba(255, 255, 255, 0.08);
+  --text-primary:     #ffffff;
+  --text-secondary:   rgba(255, 255, 255, 0.7);
+  --text-muted:       rgba(255, 255, 255, 0.5);
+
+  /* Accent Palette */
+  --accent-primary:   #6c5ce7;
+  --accent-secondary: #00cec9;
+  --accent-tertiary:  #fd79a8;
+
+  /* Gradients */
+  --gradient-primary:   linear-gradient(135deg, #6c5ce7, #00cec9);
+  --gradient-secondary: linear-gradient(135deg, #6c5ce7, #fd79a8);
+  --gradient-hero:      linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0a0a1a 100%);
+
+  /* Shadows */
+  --shadow-sm:   0 2px 10px rgba(0, 0, 0, 0.3);
+  --shadow-md:   0 8px 30px rgba(0, 0, 0, 0.4);
+  --shadow-lg:   0 20px 60px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px rgba(108, 92, 231, 0.3);
+
+  /* Borders & Radii */
+  --border-glass: 1px solid rgba(255, 255, 255, 0.1);
+  --radius-sm:    8px;
+  --radius-md:    16px;
+  --radius-lg:    24px;
+  --radius-xl:    32px;
+
+  /* Transitions */
+  --transition-fast:   0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow:   0.5s ease;
+}
+
+/* ── Light Theme ── */
+[data-theme='light'] {
+  --bg-primary:     #f8f9ff;
+  --bg-secondary:   #eef0ff;
+  --bg-tertiary:    #e4e7ff;
+  --bg-card:        rgba(108, 92, 231, 0.05);
+  --bg-glass:       rgba(255, 255, 255, 0.7);
+  --text-primary:   #1a1a2e;
+  --text-secondary: rgba(26, 26, 46, 0.7);
+  --text-muted:     rgba(26, 26, 46, 0.5);
+  --shadow-sm:      0 2px 10px rgba(108, 92, 231, 0.1);
+  --shadow-md:      0 8px 30px rgba(108, 92, 231, 0.15);
+  --shadow-lg:      0 20px 60px rgba(108, 92, 231, 0.2);
+  --shadow-glow:    0 0 20px rgba(108, 92, 231, 0.15);
+  --border-glass:   1px solid rgba(108, 92, 231, 0.15);
+}
+
+/* ===================================================================
+   CUSTOM SCROLLBAR
+   =================================================================== */
+/* Webkit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-primary) var(--bg-secondary);
+}
+
+/* ===================================================================
+   SELECTION STYLING
+   =================================================================== */
+::selection {
+  background: var(--accent-primary);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: var(--accent-primary);
+  color: #ffffff;
+}
