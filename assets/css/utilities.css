@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
 }
@@ -190,6 +191,11 @@ small {
   overflow: hidden;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.02em;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .btn-primary {
