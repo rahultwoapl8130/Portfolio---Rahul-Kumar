@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- ============================================
@@ -40,6 +40,9 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/chatbot.css">
+
+  <!-- AOS CSS for Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -196,23 +199,23 @@
       <div class="hero-grid">
         <!-- Hero Text -->
         <div class="hero-content">
-          <p class="hero-greeting reveal" data-reveal="up">Hello, I'm <span class="wave">👋</span></p>
+          <p class="hero-greeting " data-aos="fade-up">Hello, I'm <span class="wave">👋</span></p>
 
-          <h1 class="hero-name reveal" data-reveal="up" data-reveal-delay="100">
+          <h1 class="hero-name " data-aos="fade-up" data-aos-delay="100">
             <span class="gradient-text">Rahul Kumar</span>
           </h1>
 
-          <div class="typing-container reveal" data-reveal="up" data-reveal-delay="200">
+          <div class="typing-container " data-aos="fade-up" data-aos-delay="200">
             <span id="typing-text"></span><span class="typing-cursor">|</span>
           </div>
 
-          <p class="hero-description reveal" data-reveal="up" data-reveal-delay="300">
-            AI Engineer bridging technical complexity with measurable business impact. 
-            Specializing in predictive modeling, cloud-native architectures, and data-driven business strategy.
+          <p class="hero-description " data-aos="fade-up" data-aos-delay="300">
+            MBA Graduate building AI solutions that drive measurable business impact. 
+            Specializing in predictive modeling, data analytics, and intelligent applications.
           </p>
 
-          <div class="hero-buttons reveal" data-reveal="up" data-reveal-delay="400">
-            <a href="#" download class="btn btn-primary">
+          <div class="hero-buttons " data-aos="fade-up" data-aos-delay="400">
+            <a href="assets/Rahul_Kumar_Resume.pdf" download class="btn btn-primary">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Resume
             </a>
@@ -261,50 +264,28 @@
     <section id="about" class="about section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
           <p class="section-subtitle">Discover my journey, passion, and what drives me to build intelligent solutions.</p>
         </div>
 
         <div class="about-content">
           <!-- About Text -->
-          <div class="about-text reveal" data-reveal="left">
+          <div class="about-text " data-aos="fade-left" style="max-width: 800px; margin: 0 auto; text-align: left;">
             <p>
-              I am an AI Solutions Architect and Data Scientist specializing in predictive modeling, cloud-native architectures, and enterprise analytics. By uniquely combining my analytical research foundation (B.Sc. in Agriculture) with deep strategic business acumen (MBA in Business Analytics), I engineer scalable AI solutions that don't just solve complex technical challenges—they drive measurable ROI.
+              I am a Data Scientist and Machine Learning Engineer passionate about translating complex data into actionable business strategy. I recently graduated with an MBA in Business Analytics from Uttaranchal University, complementing my strong analytical research foundation from my B.Sc. in Agriculture.
             </p>
             <p>
-              From architecting end-to-end Machine Learning pipelines using Python and Scikit-learn, to deploying data infrastructure across GCP and Snowflake, I bridge the critical gap between advanced technical execution and high-level business strategy.
+              I specialize in building end-to-end ML pipelines, predictive models, and enterprise dashboards. Through independent projects, I have developed customer segmentation engines, deployed churn prediction models, and engineered robust analytics pipelines.
             </p>
             <p>
-              I thrive on transforming raw, noisy data into actionable C-level insights and architecting systems that scale gracefully in production environments.
+              I combine deep technical skills in Python, Scikit-learn, and cloud platforms (GCP, Snowflake) with the business acumen to ensure every model solves a real problem. I am actively seeking full-time Data Scientist/ML Engineer roles where I can drive immediate value.
             </p>
-          </div>
-
-          <!-- About Stats -->
-          <div class="about-stats reveal" data-reveal="right">
-            <div class="stats-grid">
-              <div class="stat-card glass-card">
-                <span class="stat-number" data-target="5" data-suffix="+">0</span>
-                <span class="stat-label">Projects</span>
-              </div>
-              <div class="stat-card glass-card">
-                <span class="stat-number" data-target="25" data-suffix="+">0</span>
-                <span class="stat-label">Skills</span>
-              </div>
-              <div class="stat-card glass-card">
-                <span class="stat-number" data-target="5" data-suffix="+">0</span>
-                <span class="stat-label">Certifications</span>
-              </div>
-              <div class="stat-card glass-card">
-                <span class="stat-number" data-target="100" data-suffix="%">0</span>
-                <span class="stat-label">Passion</span>
-              </div>
-            </div>
           </div>
         </div>
 
         <!-- Career Objective -->
-        <div class="career-objective reveal glass-card" data-reveal="up">
+        <div class="career-objective  glass-card" data-aos="fade-up">
           <h3>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
             Career Objective
@@ -325,13 +306,13 @@
     <section id="skills" class="skills section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
           <p class="section-subtitle">Technologies and tools I use to bring ideas to life.</p>
         </div>
 
         <!-- Filter Buttons -->
-        <div class="skills-filter reveal" data-reveal="up" data-reveal-delay="100">
+        <div class="skills-filter " data-aos="fade-up" data-aos-delay="100">
           <button class="skills-filter-btn active" data-filter="all">All</button>
           <button class="skills-filter-btn" data-filter="programming">Programming</button>
           <button class="skills-filter-btn" data-filter="ml">ML &amp; AI</button>
@@ -344,7 +325,7 @@
         <div class="skills-grid">
 
           <!-- ===== PROGRAMMING ===== -->
-          <div class="skill-card glass-card reveal" data-category="programming" data-reveal-delay="100">
+          <div class="skill-card glass-card " data-category="programming" data-aos-delay="100">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
@@ -354,7 +335,7 @@
             <span class="skill-category-badge">Programming</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="programming" data-reveal-delay="200">
+          <div class="skill-card glass-card " data-category="programming" data-aos-delay="200">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
             </div>
@@ -364,7 +345,7 @@
             <span class="skill-category-badge">Programming</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="programming" data-reveal-delay="300">
+          <div class="skill-card glass-card " data-category="programming" data-aos-delay="300">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
             </div>
@@ -374,7 +355,7 @@
             <span class="skill-category-badge">Programming</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="programming" data-reveal-delay="400">
+          <div class="skill-card glass-card " data-category="programming" data-aos-delay="400">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
             </div>
@@ -385,7 +366,7 @@
           </div>
 
           <!-- ===== ML & AI ===== -->
-          <div class="skill-card glass-card reveal" data-category="ml" data-reveal-delay="100">
+          <div class="skill-card glass-card " data-category="ml" data-aos-delay="100">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.92L12 22"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.57 3.25 3.92"/><line x1="4.5" y1="9" x2="19.5" y2="9"/><path d="M8 15h8"/><path d="M9 18h6"/></svg>
             </div>
@@ -395,7 +376,7 @@
             <span class="skill-category-badge">ML &amp; AI</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="ml" data-reveal-delay="200">
+          <div class="skill-card glass-card " data-category="ml" data-aos-delay="200">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 12h10"/><path d="M12 7v10"/><circle cx="7" cy="7" r="1"/><circle cx="17" cy="7" r="1"/><circle cx="7" cy="17" r="1"/><circle cx="17" cy="17" r="1"/></svg>
             </div>
@@ -405,7 +386,7 @@
             <span class="skill-category-badge">ML &amp; AI</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="ml" data-reveal-delay="300">
+          <div class="skill-card glass-card " data-category="ml" data-aos-delay="300">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
             </div>
@@ -415,7 +396,7 @@
             <span class="skill-category-badge">ML &amp; AI</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="ml" data-reveal-delay="400">
+          <div class="skill-card glass-card " data-category="ml" data-aos-delay="400">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
             </div>
@@ -425,7 +406,7 @@
             <span class="skill-category-badge">ML &amp; AI</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="ml" data-reveal-delay="500">
+          <div class="skill-card glass-card " data-category="ml" data-aos-delay="500">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 17l4-8 4 4 6-10"/></svg>
             </div>
@@ -436,7 +417,7 @@
           </div>
 
           <!-- ===== DATA VISUALIZATION ===== -->
-          <div class="skill-card glass-card reveal" data-category="visualization" data-reveal-delay="100">
+          <div class="skill-card glass-card " data-category="visualization" data-aos-delay="100">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
             </div>
@@ -446,7 +427,7 @@
             <span class="skill-category-badge">Data Visualization</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="visualization" data-reveal-delay="200">
+          <div class="skill-card glass-card " data-category="visualization" data-aos-delay="200">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-6 4 3 6-7"/></svg>
             </div>
@@ -456,7 +437,7 @@
             <span class="skill-category-badge">Data Visualization</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="visualization" data-reveal-delay="300">
+          <div class="skill-card glass-card " data-category="visualization" data-aos-delay="300">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
@@ -466,7 +447,7 @@
             <span class="skill-category-badge">Data Visualization</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="visualization" data-reveal-delay="400">
+          <div class="skill-card glass-card " data-category="visualization" data-aos-delay="400">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
@@ -476,7 +457,7 @@
             <span class="skill-category-badge">Data Visualization</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="visualization" data-reveal-delay="500">
+          <div class="skill-card glass-card " data-category="visualization" data-aos-delay="500">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
             </div>
@@ -487,7 +468,7 @@
           </div>
 
           <!-- ===== CLOUD & DATA ===== -->
-          <div class="skill-card glass-card reveal" data-category="cloud" data-reveal-delay="100">
+          <div class="skill-card glass-card " data-category="cloud" data-aos-delay="100">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
             </div>
@@ -497,7 +478,7 @@
             <span class="skill-category-badge">Cloud &amp; Data</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="cloud" data-reveal-delay="200">
+          <div class="skill-card glass-card " data-category="cloud" data-aos-delay="200">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.92L12 22"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.57 3.25 3.92"/><circle cx="12" cy="6" r="1.5"/></svg>
             </div>
@@ -507,7 +488,7 @@
             <span class="skill-category-badge">Cloud &amp; Data</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="cloud" data-reveal-delay="300">
+          <div class="skill-card glass-card " data-category="cloud" data-aos-delay="300">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
             </div>
@@ -517,7 +498,7 @@
             <span class="skill-category-badge">Cloud &amp; Data</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="cloud" data-reveal-delay="400">
+          <div class="skill-card glass-card " data-category="cloud" data-aos-delay="400">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/><path d="M13 14l-2 4"/><path d="M11 14l-2 4"/></svg>
             </div>
@@ -527,7 +508,7 @@
             <span class="skill-category-badge">Cloud &amp; Data</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="cloud" data-reveal-delay="500">
+          <div class="skill-card glass-card " data-category="cloud" data-aos-delay="500">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
             </div>
@@ -538,7 +519,7 @@
           </div>
 
           <!-- ===== TOOLS & DEVOPS ===== -->
-          <div class="skill-card glass-card reveal" data-category="tools" data-reveal-delay="100">
+          <div class="skill-card glass-card " data-category="tools" data-aos-delay="100">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3"/><path d="M12 18v3"/><path d="M3 12h3"/><path d="M18 12h3"/><path d="m5.636 5.636 2.121 2.121"/><path d="m16.243 16.243 2.121 2.121"/><path d="m5.636 18.364 2.121-2.121"/><path d="m16.243 7.757 2.121-2.121"/></svg>
             </div>
@@ -548,7 +529,7 @@
             <span class="skill-category-badge">Tools &amp; DevOps</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="tools" data-reveal-delay="200">
+          <div class="skill-card glass-card " data-category="tools" data-aos-delay="200">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             </div>
@@ -558,7 +539,7 @@
             <span class="skill-category-badge">Tools &amp; DevOps</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="tools" data-reveal-delay="300">
+          <div class="skill-card glass-card " data-category="tools" data-aos-delay="300">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12A10 10 0 1 1 12 2"/><path d="M22 2 13.5 10.5"/><path d="M16 2h6v6"/></svg>
             </div>
@@ -568,7 +549,7 @@
             <span class="skill-category-badge">Tools &amp; DevOps</span>
           </div>
 
-          <div class="skill-card glass-card reveal" data-category="tools" data-reveal-delay="400">
+          <div class="skill-card glass-card " data-category="tools" data-aos-delay="400">
             <div class="skill-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
             </div>
@@ -588,83 +569,17 @@
     <section id="projects" class="projects section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
           <p class="section-subtitle">Real-world AI &amp; Data Science solutions I've built.</p>
         </div>
 
         <div class="projects-grid">
 
-          <!-- PROJECT 1: Shooper Spectrum (Featured) -->
-          <article class="project-card featured reveal glass-card" data-reveal-delay="100"
-            data-problem="Retailers struggle to understand customer purchasing behaviors in real-time, leading to untargeted marketing and lost cross-selling opportunities. Disconnected data silos make it difficult to derive actionable insights."
-            data-solution="An end-to-end AI-powered e-commerce analytics platform that ingests raw sales data, segments customers using unsupervised learning, and provides interactive business dashboards for stakeholders."
-            data-architecture="Data Pipeline: Pandas/NumPy for cleaning & preprocessing. ML Models: K-Means for segmentation, Apriori for market basket analysis. Backend: Flask REST API. Frontend: HTML/CSS/JS with Chart.js. Deployment: Docker on Render."
-            data-impact="Increased targeted campaign ROI by allowing marketing teams to easily identify high-value customer segments. Improved cross-selling through data-driven product recommendations."
-            data-challenges="Handling large, messy transaction datasets required significant feature engineering. Optimizing the K-Means algorithm to run efficiently on the backend was critical for performance."
-            data-tech="Python,Pandas,NumPy,Scikit-learn,Flask,HTML/CSS,JavaScript,Chart.js,Render">
-            <div class="project-badge">Featured Project</div>
-            <div class="project-image">
-              <div class="project-image-placeholder" style="background: linear-gradient(135deg, #6c5ce7, #00cec9);">
-                <span class="project-image-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><path d="M3 3v18h18"/></svg>
-                </span>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Shooper Spectrum</h3>
-              <p class="project-subtitle">AI-Powered E-Commerce Analytics Platform</p>
-              <p class="project-description">An end-to-end AI-powered e-commerce analytics platform that combines customer segmentation, recommendation intelligence, and interactive business dashboards to help retailers make data-driven decisions.</p>
-              <div class="project-features">
-                <h4>Key Features</h4>
-                <ul>
-                  <li>Customer Analytics &amp; Segmentation</li>
-                  <li>Interactive Sales Dashboard</li>
-                  <li>Business Intelligence Reports</li>
-                  <li>Machine Learning Models</li>
-                  <li>Data Visualization</li>
-                  <li>Responsive Design</li>
-                </ul>
-              </div>
-              <div class="project-tech">
-                <span class="tag">Python</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">NumPy</span>
-                <span class="tag">Scikit-learn</span>
-                <span class="tag">Flask</span>
-                <span class="tag">HTML/CSS</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Chart.js</span>
-                <span class="tag">Render</span>
-              </div>
-              <div class="project-value">
-                <h4>Business Value</h4>
-                <div class="project-value-tags">
-                  <span class="pill value-pill">Customer Segmentation</span>
-                  <span class="pill value-pill">Sales Analytics</span>
-                  <span class="pill value-pill">Marketing Optimization</span>
-                  <span class="pill value-pill">Decision Support</span>
-                </div>
-              </div>
-              <div class="project-links">
-                <button class="btn btn-primary btn-case-study" aria-label="View Case Study for Shooper Spectrum">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                  Case Study
-                </button>
-                <a href="https://github.com/rahultwoapl8130/Shooper_Spectrum" target="_blank" rel="noopener" class="btn btn-outline" aria-label="GitHub Repo for Shooper Spectrum">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                </a>
-                <a href="https://shooper-spectrum.onrender.com/" target="_blank" rel="noopener" class="btn btn-outline" aria-label="Live Demo for Shooper Spectrum">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 2: SmartCart (Featured) -->
-          <article class="project-card featured reveal glass-card" data-reveal-delay="200"
+          <!-- PROJECT 1: SmartCart (Featured) -->
+          <article class="project-card featured  glass-card" data-aos-delay="100"
             data-problem="The marketing team was burning budget and experiencing low conversion rates due to generic, untargeted campaign blasts that failed to resonate with diverse user cohorts."
-            data-solution="Architected 'SmartCart', an end-to-end unsupervised machine learning engine that ingests transactional data to automatically group users into high-intent behavioral segments."
+            data-solution="Built an end-to-end unsupervised machine learning engine that ingests transactional data to automatically group users into high-intent behavioral segments."
             data-architecture="Engineered a scalable pipeline using Pandas/NumPy for ETL and Scikit-learn for modeling. Implemented PCA to compress 22 raw business features, eliminating multicollinearity and reducing training time while preserving 95% of data variance. Deployed K-Means clustering, optimizing k via Silhouette Scores."
             data-impact="Unlocked the ability to personalize marketing at scale, projecting a 15% improvement in targeting ROI and significantly reducing customer acquisition costs."
             data-challenges="The hardest part was handling high-dimensional, noisy transactional data. I solved this by engineering robust feature scaling and applying PCA to ensure the K-Means algorithm clustered on true behavioral signals rather than noise."
@@ -679,20 +594,15 @@
             </div>
             <div class="project-content">
               <h3 class="project-title">SmartCart</h3>
-              <p class="project-subtitle">AI-Powered Behavioral Segmentation Engine</p>
-              <p class="project-description">An end-to-end unsupervised learning engine leveraging PCA and K-Means clustering to analyze complex transactional data, automating customer segmentation to drive personalized marketing strategies at scale.</p>
-              <div class="project-features">
-                <h4>Key Features</h4>
-                <ul>
-                  <li>Customer Segmentation</li>
-                  <li>Recommendation Engine</li>
-                  <li>PCA Dimensionality Reduction</li>
-                  <li>K-Means &amp; Agglomerative Clustering</li>
-                  <li>Feature Engineering</li>
-                  <li>Business Insights</li>
-                  <li>Responsive UI</li>
-                </ul>
+              <p class="project-subtitle">Customer Segmentation & Recommendation</p>
+              
+              <div class="project-fresher-format" style="margin: 1.5rem 0; font-size: 0.95rem; line-height: 1.5;">
+                <p style="margin-bottom: 0.5rem;"><strong>Problem:</strong> Marketing teams waste budget on generic campaigns because they lack customer segmentation.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong> Built an unsupervised ML system (K-Means + PCA) to segment 2,240 customers into distinct groups.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Value:</strong> Enabled targeted campaigns, projected 15% increase in marketing ROI.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Learning:</strong> Learned to balance model complexity with business interpretability.</p>
               </div>
+
               <div class="project-tech">
                 <span class="tag">Python</span>
                 <span class="tag">Scikit-learn</span>
@@ -700,18 +610,6 @@
                 <span class="tag">NumPy</span>
                 <span class="tag">PCA</span>
                 <span class="tag">K-Means</span>
-                <span class="tag">HTML/CSS</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">GitHub Pages</span>
-              </div>
-              <div class="project-value">
-                <h4>Business Value</h4>
-                <div class="project-value-tags">
-                  <span class="pill value-pill">Personalized Recommendations</span>
-                  <span class="pill value-pill">Customer Retention</span>
-                  <span class="pill value-pill">Marketing Optimization</span>
-                  <span class="pill value-pill">Inventory Planning</span>
-                </div>
               </div>
               <div class="project-links">
                 <button class="btn btn-primary btn-case-study" aria-label="View Case Study for SmartCart">
@@ -728,8 +626,8 @@
             </div>
           </article>
 
-          <!-- PROJECT 3: Adventure Works BI Dashboard -->
-          <article class="project-card reveal glass-card" data-reveal-delay="300"
+          <!-- PROJECT 2: Adventure Works BI Dashboard -->
+          <article class="project-card  glass-card" data-aos-delay="200"
             data-problem="Executive leadership lacked a unified view of global sales performance, relying on fragmented Excel reports that were updated weekly, causing delays in strategic decision-making."
             data-solution="Designed a comprehensive, automated Power BI Executive Dashboard providing real-time insights into regional analytics, product performance, and customer trends."
             data-architecture="Data Ingestion: Power Query connecting to SQL Server. Data Modeling: Star schema with calculated DAX measures. Visualization: Power BI Executive, Sales, and Regional dashboards."
@@ -746,20 +644,19 @@
             <div class="project-content">
               <h3 class="project-title">Adventure Works BI Dashboard</h3>
               <p class="project-subtitle">Business Intelligence Dashboard</p>
-              <p class="project-description">A comprehensive business intelligence dashboard built with Power BI featuring interactive sales analytics, customer insights, regional performance metrics, and advanced DAX measures for data-driven decision making.</p>
+              
+              <div class="project-fresher-format" style="margin: 1.5rem 0; font-size: 0.95rem; line-height: 1.5;">
+                <p style="margin-bottom: 0.5rem;"><strong>Problem:</strong> Executives relied on fragmented, delayed Excel reports for global sales data.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong> Developed automated Power BI dashboards connecting directly to SQL databases for real-time tracking.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Value:</strong> Reduced reporting time by 15 hours/week, empowering instant strategic decisions.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Learning:</strong> Gained deep experience in DAX data modeling and stakeholder communication.</p>
+              </div>
+
               <div class="project-tech">
                 <span class="tag">Power BI</span>
                 <span class="tag">Power Query</span>
                 <span class="tag">DAX</span>
                 <span class="tag">Data Modeling</span>
-              </div>
-              <div class="project-value">
-                <h4>Business Value</h4>
-                <div class="project-value-tags">
-                  <span class="pill value-pill">Sales Performance</span>
-                  <span class="pill value-pill">Customer Analysis</span>
-                  <span class="pill value-pill">Regional Insights</span>
-                </div>
               </div>
               <div class="project-links">
                 <a href="#" class="btn btn-outline">
@@ -770,8 +667,8 @@
             </div>
           </article>
 
-          <!-- PROJECT 4: Loan Approval Prediction -->
-          <article class="project-card reveal glass-card" data-reveal-delay="400"
+          <!-- PROJECT 3: Loan Approval Prediction -->
+          <article class="project-card  glass-card" data-aos-delay="300"
             data-problem="Financial institutions face significant risk when approving loans manually. They needed an automated system to evaluate applicants based on credit history, income, and demographics to reduce default rates."
             data-solution="Developed a Machine Learning classification model that predicts loan approval with high accuracy, providing a risk score for each applicant."
             data-architecture="Data Processing: Pandas for EDA and handling missing values. Modeling: Scikit-learn (Random Forest, Logistic Regression). Evaluation: Precision, Recall, and ROC-AUC curves. Hyperparameter tuning using GridSearchCV."
@@ -788,7 +685,14 @@
             <div class="project-content">
               <h3 class="project-title">Loan Approval Prediction</h3>
               <p class="project-subtitle">ML Classification Model</p>
-              <p class="project-description">Machine learning classification model to predict loan approval decisions using customer demographic and financial data with comprehensive EDA and feature engineering.</p>
+              
+              <div class="project-fresher-format" style="margin: 1.5rem 0; font-size: 0.95rem; line-height: 1.5;">
+                <p style="margin-bottom: 0.5rem;"><strong>Problem:</strong> Manual loan approval processes are slow and prone to human bias and risk.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong> Built a Random Forest classification model to predict loan default risks based on applicant history.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Value:</strong> Designed to automate 40% of manual reviews while maintaining 92% accuracy.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Learning:</strong> Mastered SMOTE techniques for handling imbalanced datasets in financial contexts.</p>
+              </div>
+
               <div class="project-tech">
                 <span class="tag">Python</span>
                 <span class="tag">Scikit-learn</span>
@@ -804,8 +708,8 @@
             </div>
           </article>
 
-          <!-- PROJECT 5: Customer Churn Prediction -->
-          <article class="project-card reveal glass-card" data-reveal-delay="500"
+          <!-- PROJECT 4: Customer Churn Prediction -->
+          <article class="project-card  glass-card" data-aos-delay="400"
             data-problem="A telecommunications company was experiencing high customer attrition. They needed a way to predict which customers were likely to leave so they could proactively offer retention incentives."
             data-solution="Built a predictive analytics model utilizing historical customer data (usage, billing, demographics) to identify at-risk customers and calculate churn probability."
             data-architecture="Pipeline: Data cleaning, encoding categorical variables, scaling. Model: XGBoost & Gradient Boosting Classifiers. Explainability: SHAP values to identify key drivers of churn (e.g., month-to-month contracts)."
@@ -822,48 +726,22 @@
             <div class="project-content">
               <h3 class="project-title">Customer Churn Prediction</h3>
               <p class="project-subtitle">Predictive Analytics Model</p>
-              <p class="project-description">Predictive analytics model to identify customers at risk of churning, enabling proactive retention strategies and reducing customer attrition for business growth.</p>
+              
+              <div class="project-fresher-format" style="margin: 1.5rem 0; font-size: 0.95rem; line-height: 1.5;">
+                <p style="margin-bottom: 0.5rem;"><strong>Problem:</strong> High customer attrition in telecom due to reactive instead of proactive retention efforts.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Solution:</strong> Built an XGBoost classifier to predict churn probability using historical usage data.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Value:</strong> Allowed targeting of the top 10% at-risk customers, simulating a 15% reduction in churn.</p>
+                <p style="margin-bottom: 0.5rem;"><strong>Learning:</strong> Implemented SHAP values to explain complex model predictions to business stakeholders.</p>
+              </div>
+
               <div class="project-tech">
                 <span class="tag">Python</span>
                 <span class="tag">Scikit-learn</span>
                 <span class="tag">Pandas</span>
-                <span class="tag">Classification</span>
+                <span class="tag">XGBoost</span>
               </div>
               <div class="project-links">
                 <button class="btn btn-primary btn-case-study" aria-label="View Case Study for Churn Prediction">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                  Case Study
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 6: Sales Forecast Dashboard -->
-          <article class="project-card reveal glass-card" data-reveal-delay="600"
-            data-problem="Supply chain and inventory teams were overstocking due to inaccurate, static monthly sales estimates, leading to high holding costs."
-            data-solution="Created an interactive Power BI dashboard featuring dynamic time-series forecasting to predict future sales trends based on historical data and seasonality."
-            data-architecture="Data: Extracted from ERP via SQL. Modeling: Built-in exponential smoothing models & custom DAX for moving averages. Visualization: Power BI forecasting visuals with confidence intervals."
-            data-impact="Improved forecast accuracy by 18%, allowing inventory managers to optimize stock levels and reduce holding costs significantly."
-            data-challenges="Handling outliers from promotional events skewed the baseline forecast. Applied data smoothing techniques before feeding into the forecasting model."
-            data-tech="Power BI,DAX,Time-Series,Forecasting,SQL">
-            <div class="project-image">
-              <div class="project-image-placeholder" style="background: linear-gradient(135deg, #55efc4, #00cec9);">
-                <span class="project-image-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-6 4 3 6-7"/></svg>
-                </span>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3 class="project-title">Sales Forecast Dashboard</h3>
-              <p class="project-subtitle">Time-Series Forecasting &amp; BI</p>
-              <p class="project-description">Interactive Power BI dashboard with time-series forecasting for sales trend analysis, seasonal patterns, and strategic business planning.</p>
-              <div class="project-tech">
-                <span class="tag">Power BI</span>
-                <span class="tag">DAX</span>
-                <span class="tag">Forecasting</span>
-              </div>
-              <div class="project-links">
-                <button class="btn btn-primary btn-case-study" aria-label="View Case Study for Sales Forecast">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                   Case Study
                 </button>
@@ -881,36 +759,35 @@
     <section id="experience" class="experience section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">My <span class="gradient-text">Experience</span></h2>
           <p class="section-subtitle">My professional journey and growth so far.</p>
         </div>
 
         <div class="timeline">
           <!-- Experience 1 -->
-          <div class="timeline-item reveal" data-reveal="left">
+          <div class="timeline-item " data-aos="fade-left">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
               <span class="timeline-date">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                2023 - Present
+                2024 - 2026
               </span>
-              <h3>AI Solutions Architect &amp; Data Scientist</h3>
+              <h3>Data Science & ML Project Portfolio</h3>
               <p class="timeline-company">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                Independent Consulting &amp; Advanced Project Development
+                Independent Project Work
               </p>
               <ul>
-                <li><strong>Architecting AI Systems:</strong> Designing and deploying scalable machine learning pipelines using Python, Scikit-learn, and modern cloud platforms (GCP, Snowflake, Databricks) to solve specific business pain points.</li>
-                <li><strong>Engineering Recommendation Engines:</strong> Architected an unsupervised learning clustering engine (SmartCart) utilizing PCA and K-Means to segment customers, enabling a projected 15% increase in targeted marketing ROI.</li>
-                <li><strong>Developing Enterprise BI Solutions:</strong> Engineered robust data models and interactive Power BI dashboards that translate raw, complex datasets into actionable C-level business strategies.</li>
-                <li><strong>Cloud Optimization:</strong> Implementing scalable data architectures to reduce query latency and optimize machine learning model training workflows.</li>
+                <li><strong>Customer Segmentation:</strong> Built an unsupervised ML system (SmartCart) using K-Means and PCA to cluster 2,240 records, establishing a data-foundation for targeted marketing.</li>
+                <li><strong>Business Intelligence:</strong> Developed automated Power BI dashboards (Adventure Works) consolidating complex sales datasets to enable rapid, data-driven decision making.</li>
+                <li><strong>Predictive Modeling:</strong> Created predictive models for loan approval and customer churn, focusing on balancing model complexity with high business interpretability.</li>
               </ul>
             </div>
           </div>
 
           <!-- Experience 2 -->
-          <div class="timeline-item reveal" data-reveal="right">
+          <div class="timeline-item " data-aos="fade-right">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
               <span class="timeline-date">
@@ -923,9 +800,9 @@
                 Confidential Client
               </p>
               <ul>
-                <li><strong>Business Intelligence:</strong> Engineered complex SQL queries and BI models to perform deep-dive business data analysis, uncovering actionable revenue-generating insights.</li>
-                <li><strong>Stakeholder Reporting:</strong> Architected automated reports and executive dashboards, streamlining cross-functional stakeholder communication and reducing manual reporting time by 30%.</li>
-                <li><strong>Trend Forecasting:</strong> Spearheaded data visualization initiatives to map historical trends, directly influencing Q3 marketing strategies.</li>
+                <li><strong>Business Intelligence:</strong> Assisted in engineering SQL queries and BI models to perform business data analysis, supporting actionable insights discovery.</li>
+                <li><strong>Stakeholder Reporting:</strong> Contributed to the creation of automated reports and executive dashboards, which helped reduce manual reporting time by 30%.</li>
+                <li><strong>Trend Forecasting:</strong> Supported data visualization initiatives to map historical trends for Q3 marketing strategies.</li>
               </ul>
             </div>
           </div>
@@ -939,14 +816,14 @@
     <section id="education" class="education section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
           <p class="section-subtitle">Academic foundation that shapes my analytical mindset.</p>
         </div>
 
         <div class="timeline education-timeline">
           <!-- Education 1: MBA -->
-          <div class="timeline-item reveal" data-reveal="left">
+          <div class="timeline-item " data-aos="fade-left">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
               <span class="timeline-date">
@@ -967,7 +844,7 @@
           </div>
 
           <!-- Education 2: B.Sc. -->
-          <div class="timeline-item reveal" data-reveal="right">
+          <div class="timeline-item " data-aos="fade-right">
             <div class="timeline-dot"></div>
             <div class="timeline-content glass-card">
               <span class="timeline-date">
@@ -995,14 +872,14 @@
     <section id="certifications" class="certifications section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
           <p class="section-subtitle">Industry-recognized credentials validating my expertise.</p>
         </div>
 
         <div class="certs-grid">
           <!-- Cert 1 -->
-          <div class="cert-card glass-card reveal" data-reveal-delay="100">
+          <div class="cert-card glass-card " data-aos-delay="100">
             <div class="cert-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
             </div>
@@ -1012,7 +889,7 @@
           </div>
 
           <!-- Cert 2 -->
-          <div class="cert-card glass-card reveal" data-reveal-delay="200">
+          <div class="cert-card glass-card " data-aos-delay="200">
             <div class="cert-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
             </div>
@@ -1022,7 +899,7 @@
           </div>
 
           <!-- Cert 3 -->
-          <div class="cert-card glass-card reveal" data-reveal-delay="300">
+          <div class="cert-card glass-card " data-aos-delay="300">
             <div class="cert-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
             </div>
@@ -1032,7 +909,7 @@
           </div>
 
           <!-- Cert 4 -->
-          <div class="cert-card glass-card reveal" data-reveal-delay="400">
+          <div class="cert-card glass-card " data-aos-delay="400">
             <div class="cert-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
             </div>
@@ -1042,7 +919,7 @@
           </div>
 
           <!-- Cert 5 -->
-          <div class="cert-card glass-card reveal" data-reveal-delay="500">
+          <div class="cert-card glass-card " data-aos-delay="500">
             <div class="cert-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
             </div>
@@ -1052,7 +929,7 @@
           </div>
 
           <!-- Cert 6 -->
-          <div class="cert-card glass-card reveal" data-reveal-delay="600">
+          <div class="cert-card glass-card " data-aos-delay="600">
             <div class="cert-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
             </div>
@@ -1070,14 +947,14 @@
     <section id="achievements" class="achievements section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">Key <span class="gradient-text">Achievements</span></h2>
           <p class="section-subtitle">Milestones that define my professional growth.</p>
         </div>
 
         <div class="achievements-grid">
           <!-- Achievement 1 -->
-          <div class="achievement-card glass-card reveal" data-reveal="up" data-reveal-delay="100">
+          <div class="achievement-card glass-card " data-aos="fade-up" data-aos-delay="100">
             <div class="achievement-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C7 4 9 7 12 7s5-3 7.5-3a2.5 2.5 0 0 1 0 5H18"/><path d="M18 15h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M6 15H4.5a2.5 2.5 0 0 1 0-5H6"/><line x1="6" y1="9" x2="6" y2="21"/><line x1="18" y1="9" x2="18" y2="21"/><line x1="6" y1="21" x2="18" y2="21"/><line x1="12" y1="3" x2="12" y2="7"/></svg>
             </div>
@@ -1086,7 +963,7 @@
           </div>
 
           <!-- Achievement 2 -->
-          <div class="achievement-card glass-card reveal" data-reveal="up" data-reveal-delay="200">
+          <div class="achievement-card glass-card " data-aos="fade-up" data-aos-delay="200">
             <div class="achievement-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
             </div>
@@ -1095,7 +972,7 @@
           </div>
 
           <!-- Achievement 3 -->
-          <div class="achievement-card glass-card reveal" data-reveal="up" data-reveal-delay="300">
+          <div class="achievement-card glass-card " data-aos="fade-up" data-aos-delay="300">
             <div class="achievement-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
@@ -1104,7 +981,7 @@
           </div>
 
           <!-- Achievement 4 -->
-          <div class="achievement-card glass-card reveal" data-reveal="up" data-reveal-delay="400">
+          <div class="achievement-card glass-card " data-aos="fade-up" data-aos-delay="400">
             <div class="achievement-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
@@ -1121,13 +998,13 @@
     <section id="github" class="github-section section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">My <span class="gradient-text">GitHub</span></h2>
           <p class="section-subtitle">Open-source contributions and coding activity.</p>
         </div>
 
         <!-- GitHub Stats -->
-        <div class="github-stats reveal" data-reveal="up" data-reveal-delay="100">
+        <div class="github-stats " data-aos="fade-up" data-aos-delay="100" style="display: none;">
           <div class="github-stat-card glass-card">
             <span class="github-stat-number" data-target="10" data-suffix="+">0</span>
             <span class="github-stat-label">Public Repos</span>
@@ -1147,7 +1024,7 @@
         </div>
 
         <!-- GitHub Contribution Graph Placeholder -->
-        <div class="github-graph reveal glass-card" data-reveal="up" data-reveal-delay="200">
+        <div class="github-graph  glass-card" data-aos="fade-up" data-aos-delay="200">
           <h4>Contribution Activity</h4>
           <div class="github-graph-placeholder">
             <p>Loading GitHub contribution data...</p>
@@ -1155,7 +1032,7 @@
         </div>
 
         <!-- Pinned Repos -->
-        <div class="github-pinned reveal" data-reveal="up" data-reveal-delay="300">
+        <div class="github-pinned " data-aos="fade-up" data-aos-delay="300">
           <h4>Pinned Repositories</h4>
           <div class="github-pinned-grid">
             <div class="github-repo-card glass-card">
@@ -1190,7 +1067,7 @@
         </div>
 
         <!-- View Profile Button -->
-        <div class="github-cta reveal" data-reveal="up" data-reveal-delay="400">
+        <div class="github-cta " data-aos="fade-up" data-aos-delay="400">
           <a href="https://github.com/rahultwoapl8130" target="_blank" rel="noopener" class="btn btn-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             View GitHub Profile
@@ -1205,12 +1082,12 @@
     <section id="testimonials" class="testimonials section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
           <p class="section-subtitle">Feedback from mentors, peers, and collaborators.</p>
         </div>
 
-        <div class="testimonials-slider reveal" data-reveal="up" data-reveal-delay="100">
+        <div class="testimonials-slider " data-aos="fade-up" data-aos-delay="100">
           <div class="testimonials-track">
             <!-- Testimonial 1 -->
             <div class="testimonial-card glass-card">
@@ -1274,14 +1151,14 @@
     <section id="blog" class="blog section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">My <span class="gradient-text">Blog</span></h2>
           <p class="section-subtitle">Sharing insights on Data Science, ML, and AI.</p>
         </div>
 
         <div class="blog-grid">
           <!-- Blog 1 -->
-          <article class="blog-card glass-card reveal" data-reveal-delay="100">
+          <article class="blog-card glass-card " data-aos-delay="100">
             <div class="blog-image">
               <div class="blog-image-placeholder" style="background: linear-gradient(135deg, #6c5ce7, #a29bfe);">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -1299,7 +1176,7 @@
           </article>
 
           <!-- Blog 2 -->
-          <article class="blog-card glass-card reveal" data-reveal-delay="200">
+          <article class="blog-card glass-card " data-aos-delay="200">
             <div class="blog-image">
               <div class="blog-image-placeholder" style="background: linear-gradient(135deg, #fd79a8, #e17055);">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.57-3.25 3.92L12 22"/><path d="M12 2a4 4 0 0 0-4 4c0 1.95 1.4 3.57 3.25 3.92"/><line x1="4.5" y1="9" x2="19.5" y2="9"/></svg>
@@ -1317,7 +1194,7 @@
           </article>
 
           <!-- Blog 3 -->
-          <article class="blog-card glass-card reveal" data-reveal-delay="300">
+          <article class="blog-card glass-card " data-aos-delay="300">
             <div class="blog-image">
               <div class="blog-image-placeholder" style="background: linear-gradient(135deg, #00cec9, #0984e3);">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
@@ -1343,12 +1220,12 @@
     <section id="faq" class="faq section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
           <p class="section-subtitle">Common questions about my work and availability.</p>
         </div>
 
-        <div class="faq-container reveal" data-reveal="up" data-reveal-delay="100">
+        <div class="faq-container " data-aos="fade-up" data-aos-delay="100">
           <!-- FAQ 1 -->
           <div class="faq-item glass-card">
             <button class="faq-question" aria-expanded="false">
@@ -1413,12 +1290,12 @@
     <section id="resume" class="resume section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">My <span class="gradient-text">Resume</span></h2>
           <p class="section-subtitle">A snapshot of my professional profile.</p>
         </div>
 
-        <div class="resume-container glass-card reveal" data-reveal="up" data-reveal-delay="100">
+        <div class="resume-container glass-card " data-aos="fade-up" data-aos-delay="100">
           <div class="resume-preview">
             <div class="resume-section">
               <h4>
@@ -1458,14 +1335,14 @@
     <section id="contact" class="contact section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header reveal" data-reveal="up">
+        <div class="section-header " data-aos="fade-up">
           <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
           <p class="section-subtitle">Have a project idea or want to collaborate? Let's talk!</p>
         </div>
 
         <div class="contact-content">
           <!-- Contact Form -->
-          <div class="contact-form-wrapper reveal" data-reveal="left">
+          <div class="contact-form-wrapper " data-aos="fade-left">
             <form id="contact-form" novalidate>
               <div class="form-group">
                 <label for="name">Name</label>
@@ -1495,7 +1372,7 @@
           </div>
 
           <!-- Contact Info -->
-          <div class="contact-info reveal" data-reveal="right">
+          <div class="contact-info " data-aos="fade-right">
             <!-- Email Card -->
             <div class="contact-card glass-card">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -1756,5 +1633,41 @@
   <script src="assets/js/app.js"></script>
   <script src="assets/js/chatbot.js"></script>
 
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+      disable: window.innerWidth < 768
+    });
+
+    // Initialize Lenis
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      direction: 'vertical',
+      gestureDirection: 'vertical',
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: false,
+      touchMultiplier: 2,
+      infinite: false,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  </script>
 </body>
 </html>
+

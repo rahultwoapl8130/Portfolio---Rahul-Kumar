@@ -6,10 +6,10 @@
     if (!el) return;
 
     const roles = [
-      'AI Solutions Architect',
-      'Senior Data Scientist',
+      'Data Scientist',
       'Machine Learning Engineer',
-      'Enterprise BI Architect'
+      'Business Analyst',
+      'Data Analyst'
     ];
 
     const typeSpeed = 100;   // ms per character
