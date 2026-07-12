@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Simple knowledge base
   const knowledgeBase = {
     'skills': 'My top skills include Python, Machine Learning, Data Science, SQL, Power BI, Scikit-learn, TensorFlow, and AWS.',
-    'project': 'My best project is the "End-to-End Sales Prediction API" which uses a Random Forest model deployed with Flask and Docker on AWS.',
+    'project': 'I have built several projects, including Shooper Spectrum (AI E-Commerce Analytics), SmartCart (Customer Segmentation), and an Adventure Works Power BI Dashboard.',
     'contact': 'You can reach me at rahultwoapl8130@gmail.com, or connect with me on LinkedIn!',
-    'education': 'I have a Bachelor of Technology in Computer Science with a specialization in AI and Data Science.',
-    'experience': 'I have worked on several freelance and academic projects focusing on predictive modeling, NLP, and data visualization.',
+    'education': 'I am pursuing an MBA in Business Analytics at Uttaranchal University (2023-2025) and hold a B.Sc. in Agriculture.',
+    'experience': 'I am an Aspiring Data Scientist & ML Engineer focusing on predictive modeling, business analytics, and AI-driven solutions.',
     'resume': 'You can download my resume using the "Resume" button in the hero section or the navigation menu.',
     'hello': 'Hi there! I am Rahul\\'s AI assistant. Ask me about his skills, projects, or how to contact him.',
     'hi': 'Hello! How can I help you learn more about Rahul today?',
@@ -87,14 +87,24 @@ document.addEventListener('DOMContentLoaded', () => {
         response = knowledgeBase['project'];
       } else if (lowerText.includes('contact') || lowerText.includes('email') || lowerText.includes('hire') || lowerText.includes('reach')) {
         response = knowledgeBase['contact'];
-      } else if (lowerText.includes('education') || lowerText.includes('degree') || lowerText.includes('university') || lowerText.includes('college')) {
+      } else if (lowerText.includes('education') || lowerText.includes('degree') || lowerText.includes('university') || lowerText.includes('college') || lowerText.includes('mba')) {
         response = knowledgeBase['education'];
-      } else if (lowerText.includes('experience') || lowerText.includes('job') || lowerText.includes('work')) {
+      } else if (lowerText.includes('experience') || lowerText.includes('job')) {
         response = knowledgeBase['experience'];
       } else if (lowerText.includes('resume') || lowerText.includes('cv')) {
         response = knowledgeBase['resume'];
       } else if (lowerText === 'hi' || lowerText === 'hello' || lowerText === 'hey') {
         response = knowledgeBase['hello'];
+      } else if (lowerText.includes('linkedin')) {
+        response = 'Opening Rahul\\'s LinkedIn profile...';
+        setTimeout(() => {
+          window.open('https://www.linkedin.com/in/rahul-kumar-54258a344/', '_blank');
+        }, 1000);
+      } else if (lowerText.includes('github')) {
+        response = 'Opening Rahul\\'s GitHub profile...';
+        setTimeout(() => {
+          window.open('https://github.com/rahultwoapl8130', '_blank');
+        }, 1000);
       }
 
       addBotMessage(response);

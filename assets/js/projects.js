@@ -111,8 +111,116 @@
     startAutoSlide();
   };
 
+  const initProjectModal = () => {
+    const caseStudyBtns = document.querySelectorAll('.btn-case-study');
+    const modal = document.getElementById('project-modal');
+    if (!modal || caseStudyBtns.length === 0) return;
+
+    const modalClose = modal.querySelector('.modal-close');
+    const modalOverlay = modal.querySelector('.modal-overlay');
+
+    const elements = {
+      title: document.getElementById('modal-title'),
+      problem: document.getElementById('modal-problem'),
+      solution: document.getElementById('modal-solution'),
+      architecture: document.getElementById('modal-architecture'),
+      impact: document.getElementById('modal-impact'),
+      challenges: document.getElementById('modal-challenges'),
+      image: document.getElementById('modal-image'),
+      demoBtn: document.getElementById('modal-demo-btn'),
+      githubBtn: document.getElementById('modal-github-btn')
+    };
+
+    const openModal = (card) => {
+      // Get Data Attributes
+      const title = card.querySelector('.project-title')?.textContent || 'Case Study';
+      const imgSrc = card.querySelector('img')?.src || '';
+      
+      const problem = card.dataset.problem || 'No data available.';
+      const solution = card.dataset.solution || 'No data available.';
+      const architecture = card.dataset.architecture || 'No data available.';
+      const impact = card.dataset.impact || 'No data available.';
+      const challenges = card.dataset.challenges || 'No data available.';
+
+      // Get external links from the card if they exist
+      const githubLink = Array.from(card.querySelectorAll('.project-links a')).find(a => a.href.includes('github'));
+      const demoLink = Array.from(card.querySelectorAll('.project-links a')).find(a => !a.href.includes('github') && a.href !== '#' && a.href !== '');
+
+      // Populate Elements
+      if (elements.title) elements.title.textContent = title;
+      if (elements.problem) elements.problem.textContent = problem;
+      if (elements.solution) elements.solution.textContent = solution;
+      if (elements.architecture) elements.architecture.textContent = architecture;
+      if (elements.impact) elements.impact.textContent = impact;
+      if (elements.challenges) elements.challenges.textContent = challenges;
+      
+      if (elements.image) {
+        if (imgSrc) {
+          elements.image.src = imgSrc;
+          elements.image.style.display = 'block';
+        } else {
+          elements.image.style.display = 'none';
+        }
+      }
+
+      // Handle Buttons
+      if (elements.githubBtn) {
+        if (githubLink) {
+          elements.githubBtn.href = githubLink.href;
+          elements.githubBtn.style.display = 'inline-flex';
+        } else {
+          elements.githubBtn.style.display = 'none';
+        }
+      }
+
+      if (elements.demoBtn) {
+        if (demoLink) {
+          elements.demoBtn.href = demoLink.href;
+          elements.demoBtn.style.display = 'inline-flex';
+        } else {
+          elements.demoBtn.style.display = 'none';
+        }
+      }
+
+      // Show Modal
+      modalOverlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    };
+
+    const closeModal = () => {
+      modalOverlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = ''; // Restore scrolling
+    };
+
+    // Event Listeners
+    caseStudyBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const card = btn.closest('.project-card');
+        if (card) openModal(card);
+      });
+    });
+
+    if (modalClose) {
+      modalClose.addEventListener('click', closeModal);
+    }
+
+    if (modalOverlay) {
+      modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) closeModal();
+      });
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modalOverlay.getAttribute('aria-hidden') === 'false') {
+        closeModal();
+      }
+    });
+  };
+
   document.addEventListener('DOMContentLoaded', () => {
     initCertModal();
     initTestimonialsSlider();
+    initProjectModal();
   });
 })();
