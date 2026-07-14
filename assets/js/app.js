@@ -471,3 +471,13 @@
     console.log('%c Portfolio Main App Initialized ✓ ', 'background:#8b5cf6;color:#fff;padding:4px 12px;border-radius:4px;font-weight:bold;');
   });
 })();
+
+// Mouse Glow Effect
+document.addEventListener('mousemove', (e) => {
+  const glow = document.querySelector('.mouse-glow');
+  const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+  if (glow) {
+    const color = isLight ? 'rgba(139, 92, 246, 0.1)' : 'rgba(139, 92, 246, 0.05)';
+    glow.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px, ${color}, transparent 40%)`;
+  }
+});

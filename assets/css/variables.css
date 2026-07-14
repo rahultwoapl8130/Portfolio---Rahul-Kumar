@@ -8,37 +8,37 @@
    =================================================================== */
 :root {
   /* ── Dark Theme (Default) ── */
-  --bg-primary:       #0a0a1a;
-  --bg-secondary:     #111128;
-  --bg-tertiary:      #1a1a3e;
-  --bg-card:          rgba(255, 255, 255, 0.05);
-  --bg-glass:         rgba(255, 255, 255, 0.08);
-  --text-primary:     #ffffff;
-  --text-secondary:   rgba(255, 255, 255, 0.7);
-  --text-muted:       rgba(255, 255, 255, 0.5);
+  --bg-primary:       #050505;
+  --bg-secondary:     #0f0f11;
+  --bg-tertiary:      #1a1a1c;
+  --bg-card:          rgba(255, 255, 255, 0.03);
+  --bg-glass:         rgba(255, 255, 255, 0.05);
+  --text-primary:     #f8fafc;
+  --text-secondary:   #94a3b8;
+  --text-muted:       #64748b;
 
   /* Accent Palette */
-  --accent-primary:   #6c5ce7;
-  --accent-secondary: #00cec9;
-  --accent-tertiary:  #fd79a8;
+  --accent-primary:   #8b5cf6; /* Vercel Purple */
+  --accent-secondary: #3b82f6; /* Modern Blue */
+  --accent-tertiary:  #ec4899; /* Pink */
 
   /* Gradients */
-  --gradient-primary:   linear-gradient(135deg, #6c5ce7, #00cec9);
-  --gradient-secondary: linear-gradient(135deg, #6c5ce7, #fd79a8);
-  --gradient-hero:      linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0a0a1a 100%);
+  --gradient-primary:   linear-gradient(135deg, #8b5cf6, #3b82f6);
+  --gradient-secondary: linear-gradient(135deg, #8b5cf6, #ec4899);
+  --gradient-hero:      linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(5, 5, 5, 1) 100%);
 
   /* Shadows */
   --shadow-sm:   0 2px 10px rgba(0, 0, 0, 0.3);
   --shadow-md:   0 8px 30px rgba(0, 0, 0, 0.4);
   --shadow-lg:   0 20px 60px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 20px rgba(108, 92, 231, 0.3);
+  --shadow-glow: 0 0 20px rgba(139, 92, 246, 0.2);
 
   /* Borders & Radii */
-  --border-glass: 1px solid rgba(255, 255, 255, 0.1);
-  --radius-sm:    8px;
-  --radius-md:    16px;
-  --radius-lg:    24px;
-  --radius-xl:    32px;
+  --border-glass: 1px solid rgba(255, 255, 255, 0.05);
+  --radius-sm:    6px;
+  --radius-md:    12px;
+  --radius-lg:    16px;
+  --radius-xl:    24px;
 
   /* Transitions */
   --transition-fast:   0.2s ease;
@@ -48,19 +48,19 @@
 
 /* ── Light Theme ── */
 [data-theme='light'] {
-  --bg-primary:     #f8f9ff;
-  --bg-secondary:   #eef0ff;
-  --bg-tertiary:    #e4e7ff;
-  --bg-card:        rgba(108, 92, 231, 0.05);
-  --bg-glass:       rgba(255, 255, 255, 0.7);
-  --text-primary:   #1a1a2e;
-  --text-secondary: rgba(26, 26, 46, 0.7);
-  --text-muted:     rgba(26, 26, 46, 0.5);
-  --shadow-sm:      0 2px 10px rgba(108, 92, 231, 0.1);
-  --shadow-md:      0 8px 30px rgba(108, 92, 231, 0.15);
-  --shadow-lg:      0 20px 60px rgba(108, 92, 231, 0.2);
-  --shadow-glow:    0 0 20px rgba(108, 92, 231, 0.15);
-  --border-glass:   1px solid rgba(108, 92, 231, 0.15);
+  --bg-primary:     #fafafa;
+  --bg-secondary:   #f4f4f5;
+  --bg-tertiary:    #e4e4e7;
+  --bg-card:        rgba(139, 92, 246, 0.05);
+  --bg-glass:       rgba(255, 255, 255, 0.8);
+  --text-primary:   #0f172a;
+  --text-secondary: #475569;
+  --text-muted:     #94a3b8;
+  --shadow-sm:      0 2px 10px rgba(139, 92, 246, 0.1);
+  --shadow-md:      0 8px 30px rgba(139, 92, 246, 0.15);
+  --shadow-lg:      0 20px 60px rgba(139, 92, 246, 0.2);
+  --shadow-glow:    0 0 20px rgba(139, 92, 246, 0.15);
+  --border-glass:   1px solid rgba(139, 92, 246, 0.15);
 }
 
 /* ===================================================================

@@ -2227,3 +2227,46 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.3);
 }
+/* ===================================================================
+   SPLIT LAYOUT (DESKTOP)
+   =================================================================== */
+@media (min-width: 1025px) {
+  .split-layout { display: flex; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 2rem; gap: 4rem; }
+  .split-left { width: 40%; position: sticky; top: 0; height: 100vh; padding: 6rem 0; display: flex; flex-direction: column; }
+  .split-right { width: 55%; padding: 6rem 0; }
+  .header { position: relative !important; padding: 0 !important; background: transparent !important; box-shadow: none !important; border: none !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important; width: 100%; }
+  .header .container { flex-direction: column; align-items: flex-start; padding: 0; }
+  .nav-menu { flex-direction: column; align-items: flex-start; background: transparent; border: none; box-shadow: none; padding: 2rem 0; gap: 1rem; }
+  .nav-actions { position: absolute; top: 0; right: 0; }
+  #home { padding-top: 1rem; padding-bottom: 0; min-height: auto; }
+  .hero-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .hero-image { display: none; }
+}
+
+@media (max-width: 1024px) {
+  .split-layout { display: block; }
+  .split-left { position: relative; height: auto; }
+  .split-right { width: 100%; }
+}
+
+/* Mouse Glow Effect */
+.mouse-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(600px circle at 50% 50%, rgba(139, 92, 246, 0.05), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+body:hover .mouse-glow {
+  opacity: 1;
+}
+
+[data-theme='light'] .mouse-glow {
+  background: radial-gradient(600px circle at 50% 50%, rgba(139, 92, 246, 0.1), transparent 40%);
+}
