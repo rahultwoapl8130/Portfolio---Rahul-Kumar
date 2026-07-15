@@ -13,9 +13,9 @@
 }
 
 .chatbot-toggle {
-  width: 56px;
   height: 56px;
-  border-radius: 50%;
+  width: auto;
+  border-radius: 100px;
   background: var(--gradient-primary);
   color: white;
   border: none;
@@ -27,6 +27,16 @@
   transition: all var(--transition-normal);
   z-index: 10001;
   position: relative;
+}
+
+.pulse-animation {
+  animation: pulse-glow 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(192, 38, 211, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(192, 38, 211, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(192, 38, 211, 0); }
 }
 
 .chatbot-toggle:hover {
