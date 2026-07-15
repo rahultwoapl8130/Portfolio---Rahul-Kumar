@@ -18,14 +18,14 @@
   --text-muted:       #64748b;
 
   /* Accent Palette */
-  --accent-primary:   #8b5cf6; /* Vercel Purple */
-  --accent-secondary: #3b82f6; /* Modern Blue */
-  --accent-tertiary:  #ec4899; /* Pink */
+  --accent-primary:   #c026d3; /* Magenta/Purple */
+  --accent-secondary: #a21caf; /* Darker Magenta */
+  --accent-tertiary:  #e879f9; /* Lighter Pink */
 
   /* Gradients */
-  --gradient-primary:   linear-gradient(135deg, #8b5cf6, #3b82f6);
-  --gradient-secondary: linear-gradient(135deg, #8b5cf6, #ec4899);
-  --gradient-hero:      linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(5, 5, 5, 1) 100%);
+  --gradient-primary:   linear-gradient(135deg, #c026d3, #a21caf);
+  --gradient-secondary: linear-gradient(135deg, #c026d3, #7e22ce);
+  --gradient-hero:      linear-gradient(135deg, rgba(192, 38, 211, 0.15) 0%, rgba(5, 5, 5, 1) 100%);
 
   /* Shadows */
   --shadow-sm:   0 2px 10px rgba(0, 0, 0, 0.3);
