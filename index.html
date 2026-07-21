@@ -214,12 +214,13 @@
             I specialize in <strong style="color: var(--text-primary);">Machine Learning</strong> and build production-ready predictive models that combine robust data engineering, modern algorithms, and real-world performance.
           </p>
 
-          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
-            <a href="#contact" class="btn" style="background: rgba(184, 41, 227, 0.2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(184, 41, 227, 0.5); color: white; font-weight: 600; padding: 10px 24px; box-shadow: 0 4px 15px rgba(184, 41, 227, 0.2); transition: all 0.3s ease;">
-              Let's Talk &rarr;
+          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+            <a href="#contact" class="btn" style="background: rgba(192, 38, 211, 0.15); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(192, 38, 211, 0.4); border-top: 1px solid rgba(192, 38, 211, 0.6); color: white; font-weight: 600; padding: 14px 32px; font-size: 1.05rem; border-radius: 50px; box-shadow: 0 8px 32px rgba(192, 38, 211, 0.2); transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+              Let's Talk
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
-            <a href="assets/Rahul_Kumar_Resume.pdf" download class="btn btn-outline" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--text-primary); margin-left: 15px; padding: 10px 24px; transition: all 0.3s ease;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <a href="assets/Rahul_Kumar_Resume.pdf" download class="btn btn-outline" style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.1); border-top: 1px solid rgba(255, 255, 255, 0.2); color: var(--text-primary); font-weight: 600; padding: 14px 32px; font-size: 1.05rem; border-radius: 50px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download Resume
             </a>
           </div>
@@ -612,110 +613,116 @@
           <p class="section-subtitle">Real-world AI &amp; Data Science solutions I've built.</p>
         </div>
 
-        <div class="projects-grid">
+        <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 40px;">
 
-          <!-- PROJECT 1: SmartCart (Featured) -->
-          <article class="project-card new-style" data-aos-delay="100">
-            <div class="project-image-wrapper">
-              <div class="project-top-badges">
-                <span class="badge featured">★ FEATURED</span>
-                <span class="badge category">DATA SCIENCE</span>
+          <!-- PROJECT 1: ParkFlow SaaS -->
+          <article class="premium-project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-img-container">
+              <div class="project-badges">
+                <span class="badge featured"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> FEATURED</span>
+                <span class="badge stack">FULLSTACK</span>
               </div>
-              <div class="project-image-placeholder" style="padding: 0;">
-                <img src="assets/images/smartcart_ai.jpg" alt="SmartCart Segmentation" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;" />
+              <div class="scrolling-image-wrapper">
+                <img src="assets/images/smartcart_ai.jpg" alt="ParkFlow SaaS" class="scrolling-image" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'" />
               </div>
             </div>
-            
-            <div class="project-content new-content">
-              <!-- SmartCart Animated Figure -->
-              <div class="project-animated-fig" style="margin-bottom: 15px; display: flex; justify-content: center; height: 60px;">
-                <svg width="60" height="60" viewBox="0 0 100 100">
-                  <circle cx="50" cy="50" r="35" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-dasharray="10 5" style="animation: spin 10s linear infinite; transform-origin: center;" />
-                  <circle cx="30" cy="40" r="10" fill="#ec4899" style="animation: floatNode 3s infinite alternate;" />
-                  <circle cx="70" cy="35" r="12" fill="#6366f1" style="animation: floatNode 4s infinite alternate-reverse;" />
-                  <circle cx="50" cy="70" r="14" fill="#14b8a6" style="animation: floatNode 3.5s infinite alternate;" />
-                </svg>
+            <div class="project-info">
+              <div class="project-header-row">
+                <h3>ParkFlow SaaS</h3>
+                <span class="year">2026</span>
               </div>
-
-              <div class="project-header">
-                <h3 class="project-title">SmartCart Segmentation</h3>
-                <span class="project-year">2024</span>
+              <p>An enterprise-grade parking management SaaS featuring real-time Socket.io state management and automated billing systems.</p>
+              <div class="tech-pills">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span class="more">+2</span>
               </div>
-              
-              <p class="project-desc">
-                An unsupervised machine learning engine that ingests transactional data to automatically group users into high-intent behavioral segments, projecting a 15% improvement in targeting ROI.
-              </p>
-
-              <div class="project-tech-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Scikit-learn</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">PCA</span>
-              </div>
-              
-              <div class="project-actions">
-                <a href="https://rahultwoapl8130.github.io/Smartcart_Customers/" target="_blank" rel="noopener" class="btn btn-primary full-width">
+              <div class="project-buttons">
+                <a href="#" target="_blank" class="demo-btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                   Live Demo
                 </a>
-                <a href="https://github.com/rahultwoapl8130/Smartcart_Customers" target="_blank" rel="noopener" class="btn btn-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <a href="#" target="_blank" class="github-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
               </div>
             </div>
           </article>
 
-          <!-- PROJECT 2: Shooper Spectrum -->
-          <article class="project-card new-style" data-aos-delay="200">
-            <div class="project-image-wrapper">
-              <div class="project-top-badges">
-                <span class="badge category">MACHINE LEARNING</span>
+          <!-- PROJECT 2: SafeDrop AI -->
+          <article class="premium-project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-img-container">
+              <div class="project-badges">
+                <span class="badge featured"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> FEATURED</span>
+                <span class="badge stack">FULLSTACK</span>
               </div>
-              <div class="project-image-placeholder" style="padding: 0;">
-                <!-- Generating a placeholder image for Shooper Spectrum. You can replace it with actual image -->
-                <img src="assets/images/shooper_cart.jpg" alt="Shooper Spectrum" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;" />
+              <div class="scrolling-image-wrapper">
+                <img src="assets/images/shooper_cart.jpg" alt="SafeDrop AI" class="scrolling-image" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'" />
               </div>
             </div>
-            
-            <div class="project-content new-content">
-              <!-- Shooper Spectrum Animated Figure -->
-              <div class="project-animated-fig" style="margin-bottom: 15px; display: flex; justify-content: center; height: 60px;">
-                <svg width="60" height="60" viewBox="0 0 100 100">
-                  <path d="M10 20 L30 20 L40 70 L90 70 L95 35 L35 35" fill="none" stroke="var(--accent-secondary)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="animation: floatCart 3s infinite alternate; transform-origin: bottom;" />
-                  <circle cx="45" cy="85" r="7" fill="var(--accent-primary)" style="animation: pulseNode 1.5s infinite;" />
-                  <circle cx="80" cy="85" r="7" fill="var(--accent-primary)" style="animation: pulseNode 1.2s infinite;" />
-                  <line x1="65" y1="45" x2="65" y2="15" stroke="#ec4899" stroke-width="3" stroke-dasharray="4 4" style="animation: floatNode 2.5s infinite alternate;" />
-                  <circle cx="65" cy="15" r="6" fill="#14b8a6" style="animation: pulseNode 2s infinite;" />
-                </svg>
+            <div class="project-info">
+              <div class="project-header-row">
+                <h3>SafeDrop AI</h3>
+                <span class="year">2026</span>
               </div>
-
-              <div class="project-header">
-                <h3 class="project-title">Shooper Spectrum</h3>
-                <span class="project-year">2024</span>
+              <p>A premium luggage & locker management SaaS for high-traffic hubs. Automates pricing, booking and availability tracking.</p>
+              <div class="tech-pills">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span class="more">+2</span>
               </div>
-              
-              <p class="project-desc">
-                An end-to-end ML platform analyzing e-commerce transactions to segment customers via RFM & KMeans, and recommending products using collaborative filtering.
-              </p>
-
-              <div class="project-tech-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Scikit-learn</span>
-                <span class="tag">Flask</span>
-                <span class="tag">RFM</span>
-              </div>
-              
-              <div class="project-actions">
-                <a href="https://shooper-spectrum.onrender.com/" target="_blank" rel="noopener" class="btn btn-primary full-width">
+              <div class="project-buttons">
+                <a href="#" target="_blank" class="demo-btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                   Live Demo
                 </a>
-                <a href="https://github.com/rahultwoapl8130" target="_blank" rel="noopener" class="btn btn-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <a href="#" target="_blank" class="github-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
               </div>
             </div>
           </article>
+
+          <!-- PROJECT 3: Real Estate Elite -->
+          <article class="premium-project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-img-container">
+              <div class="project-badges">
+                <span class="badge featured"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> FEATURED</span>
+                <span class="badge stack">FULLSTACK</span>
+              </div>
+              <div class="scrolling-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Real Estate Elite" class="scrolling-image" />
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-header-row">
+                <h3>Real Estate Elite</h3>
+                <span class="year">2025</span>
+              </div>
+              <p>A scalable real estate platform that allows users to explore, list, and manage property portfolios securely online.</p>
+              <div class="tech-pills">
+                <span>MongoDB</span>
+                <span>Express</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span class="more">+1</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" target="_blank" class="demo-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+                <a href="#" target="_blank" class="github-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -1244,9 +1251,9 @@
   <!-- ============================================
        FOOTER
   ============================================ -->
-  <footer class="footer" style="background: #000; padding: 80px 0 30px 0; border-top: 1px solid #111; position: relative; z-index: 1;">
+  <footer class="footer" style="background: #000; padding: 80px 0 10px 0; border-top: 1px solid #111; position: relative; z-index: 1;">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 60px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
         
         <!-- Column 1: Profile (Spans 2 columns on larger screens via flex-grow or wider minmax, but auto-fit handles it nicely) -->
         <div style="grid-column: span 2;">
@@ -1326,7 +1333,7 @@
       </div>
 
       <!-- Bottom Copyright -->
-      <div style="border-top: 1px solid #111; padding-top: 30px; text-align: center;">
+      <div style="border-top: 1px solid #111; padding-top: 15px; text-align: center;">
         <p style="color: #555; font-size: 0.85rem; margin: 0;">&copy; 2026 Rahul Kumar. All rights reserved.</p>
       </div>
     </div>
