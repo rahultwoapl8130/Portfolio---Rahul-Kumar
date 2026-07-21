@@ -599,7 +599,41 @@
     <!-- ==========================================
          PROJECTS SECTION
     ========================================== -->
-    <section id="projects" class="projects section-padding" style="padding-top: 60px;">
+    <section id="projects" class="projects section-padding" style="padding-top: 60px; position: relative; overflow: hidden;">
+      <!-- Floating Background Figures -->
+      <div class="floating-fig fig-1"></div>
+      <div class="floating-fig fig-2"></div>
+      <style>
+        .floating-fig {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(80px);
+          opacity: 0.4;
+          z-index: 0;
+          animation: floatFig 15s infinite alternate ease-in-out;
+        }
+        .fig-1 { width: 300px; height: 300px; background: var(--accent-primary); top: -50px; left: -100px; }
+        .fig-2 { width: 400px; height: 400px; background: var(--accent-secondary); bottom: 100px; right: -150px; animation-duration: 20s; }
+        @keyframes floatFig {
+          0% { transform: translate(0, 0) scale(1); }
+          50% { transform: translate(50px, 50px) scale(1.1); }
+          100% { transform: translate(-30px, 100px) scale(0.9); }
+        }
+        @keyframes floatNode {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-10px); }
+        }
+        @keyframes floatCart {
+          0% { transform: translateY(0) rotate(-2deg); }
+          100% { transform: translateY(-8px) rotate(2deg); }
+        }
+        @keyframes pulseNode {
+          0% { transform: scale(0.85); opacity: 0.6; }
+          50% { transform: scale(1.15); opacity: 1; }
+          100% { transform: scale(0.85); opacity: 0.6; }
+        }
+        .projects .container { position: relative; z-index: 1; }
+      </style>
       <div class="container">
         <!-- Section Header -->
         <div class="section-header " data-aos="fade-up">
@@ -622,6 +656,16 @@
             </div>
             
             <div class="project-content new-content">
+              <!-- SmartCart Animated Figure -->
+              <div class="project-animated-fig" style="margin-bottom: 15px; display: flex; justify-content: center; height: 60px;">
+                <svg width="60" height="60" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="35" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-dasharray="10 5" style="animation: spin 10s linear infinite; transform-origin: center;" />
+                  <circle cx="30" cy="40" r="10" fill="#ec4899" style="animation: floatNode 3s infinite alternate;" />
+                  <circle cx="70" cy="35" r="12" fill="#6366f1" style="animation: floatNode 4s infinite alternate-reverse;" />
+                  <circle cx="50" cy="70" r="14" fill="#14b8a6" style="animation: floatNode 3.5s infinite alternate;" />
+                </svg>
+              </div>
+
               <div class="project-header">
                 <h3 class="project-title">SmartCart Segmentation</h3>
                 <span class="project-year">2024</span>
@@ -663,6 +707,17 @@
             </div>
             
             <div class="project-content new-content">
+              <!-- Shooper Spectrum Animated Figure -->
+              <div class="project-animated-fig" style="margin-bottom: 15px; display: flex; justify-content: center; height: 60px;">
+                <svg width="60" height="60" viewBox="0 0 100 100">
+                  <path d="M10 20 L30 20 L40 70 L90 70 L95 35 L35 35" fill="none" stroke="var(--accent-secondary)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="animation: floatCart 3s infinite alternate; transform-origin: bottom;" />
+                  <circle cx="45" cy="85" r="7" fill="var(--accent-primary)" style="animation: pulseNode 1.5s infinite;" />
+                  <circle cx="80" cy="85" r="7" fill="var(--accent-primary)" style="animation: pulseNode 1.2s infinite;" />
+                  <line x1="65" y1="45" x2="65" y2="15" stroke="#ec4899" stroke-width="3" stroke-dasharray="4 4" style="animation: floatNode 2.5s infinite alternate;" />
+                  <circle cx="65" cy="15" r="6" fill="#14b8a6" style="animation: pulseNode 2s infinite;" />
+                </svg>
+              </div>
+
               <div class="project-header">
                 <h3 class="project-title">Shooper Spectrum</h3>
                 <span class="project-year">2024</span>
