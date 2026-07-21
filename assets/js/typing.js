@@ -33,10 +33,11 @@
       tick();
     }
 
+    const colors = ['#ff5e57', '#ffdd59', '#0be881', '#4bcffa', '#3c40c6', '#f53b57', '#ffa801', '#0fb9b1', '#575fcf', '#ef5777'];
+
     // Animate Name: Rahul Kumar
     if (nameContainer) {
       const name = "Rahul Kumar";
-      const colors = ['#ff5e57', '#ffdd59', '#0be881', '#4bcffa', '#3c40c6', '#f53b57', '#ffa801', '#0fb9b1', '#575fcf', '#ef5777'];
       let nameCharIndex = 0;
       nameContainer.innerHTML = ''; // clear initially
 
@@ -57,14 +58,48 @@
           setTimeout(typeName, 150); // Typing speed for name
         }
       };
-      // Add keyframes dynamically if not present
-      if (!document.getElementById('typing-keyframes')) {
-        const style = document.createElement('style');
-        style.id = 'typing-keyframes';
-        style.innerHTML = `@keyframes fadeInChar { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }`;
-        document.head.appendChild(style);
-      }
       setTimeout(typeName, 500);
+    }
+
+    // Animate Professional Experience Header
+    const expHeader = document.getElementById('experience-typing-header');
+    if (expHeader) {
+      const textToType = "Professional Experience";
+      expHeader.innerHTML = ''; // clear initially
+      expHeader.style.minHeight = '1.2em';
+
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          let charIdx = 0;
+          const typeExp = () => {
+            if (charIdx < textToType.length) {
+              const char = textToType[charIdx];
+              const span = document.createElement('span');
+              span.textContent = char;
+              if (char !== ' ') {
+                const color = colors[charIdx % colors.length];
+                span.style.color = color;
+                span.style.opacity = '0';
+                span.style.animation = 'fadeInChar 0.1s forwards';
+              }
+              expHeader.appendChild(span);
+              charIdx++;
+              setTimeout(typeExp, 80); // Typing speed
+            }
+          };
+          setTimeout(typeExp, 300);
+          observer.disconnect(); // Only play once
+        }
+      }, { threshold: 0.5 });
+      observer.observe(expHeader);
+    }
+
+    // Add keyframes dynamically if not present
+    if (!document.getElementById('typing-keyframes')) {
+      const style = document.createElement('style');
+      style.id = 'typing-keyframes';
+      style.innerHTML = `@keyframes fadeInChar { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }`;
+      document.head.appendChild(style);
     }
   };
 
