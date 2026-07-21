@@ -227,14 +227,74 @@
           </div>
         </div>
 
-        <!-- Hero Image (Replaced Code Snippet Box) -->
+        <!-- Hero Code Snippet -->
         <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
-          <div class="hero-image-inner glass-card">
-            <img src="assets/images/rahul.jpg" alt="Rahul Kumar - AI/ML Engineer" class="hero-profile-img" />
-            <div class="open-to-work-badge">
-              <span class="pulse-dot"></span> Open to Work
+          <div class="code-snippet-box glass-card" style="padding: 0; overflow: hidden; background: #0a0a0a; border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); position: relative;">
+            <div class="code-header" style="display: flex; align-items: center; padding: 12px 16px; background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <div class="mac-buttons" style="display: flex; gap: 8px;">
+                <span style="width: 12px; height: 12px; border-radius: 50%; background-color: #ff5f56;"></span>
+                <span style="width: 12px; height: 12px; border-radius: 50%; background-color: #ffbd2e;"></span>
+                <span style="width: 12px; height: 12px; border-radius: 50%; background-color: #27c93f;"></span>
+              </div>
+              <span class="code-filename" style="margin: 0 auto; color: #888; font-size: 0.85rem; font-family: monospace;">developer.jsx</span>
+            </div>
+            <pre class="code-content" style="margin: 0; padding: 24px; font-family: 'Fira Code', monospace; font-size: 0.95rem; line-height: 1.6; color: #e6e6e6; overflow-x: auto;"><code>
+<span style="color: #c678dd;">const</span> <span style="color: #61afef;">developer</span> = {
+  <span style="color: #e06c75;">name</span>: <span style="color: #98c379;">"Mr Rahul Kumar "</span>,
+  <span style="color: #e06c75;">role</span>: <span style="color: #98c379;">"Full Stack Developer"</span>,
+  <span style="color: #e06c75;">focus</span>: <span style="color: #98c379;">"MERN Stack & Modern Web Apps"</span>,
+  <span style="color: #e06c75;">skills</span>: [<span style="color: #98c379;">"React.js"</span>, <span style="color: #98c379;">"Node.js"</span>, <span style="color: #98c379;">"Express.js"</span>, <span style="color: #98c379;">"MongoDB"</span>],
+  <span style="color: #e06c75;">mindset</span>: <span style="color: #98c379;">"Problem solver & continuous learner"</span>,
+  <span style="color: #e06c75;">availability</span>: <span style="color: #98c379;">"Open to freelance & full-time roles"</span>
+};</code></pre>
+            <div class="code-badge" style="position: absolute; bottom: -1px; left: 16px; background: rgba(46, 204, 113, 0.15); color: #2ecc71; padding: 6px 12px; border-radius: 8px 8px 0 0; font-size: 0.8rem; font-weight: 600; display: flex; align-items: center; gap: 6px; border: 1px solid rgba(46, 204, 113, 0.3); border-bottom: none;">
+              <span class="pulse-dot" style="width: 8px; height: 8px; background-color: #2ecc71; border-radius: 50%; display: inline-block;"></span> Node.js
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Marquee -->
+    <div class="skills-marquee-container" style="width: 100%; overflow: hidden; background: #050505; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); padding: 15px 0; position: absolute; bottom: 0; left: 0;">
+      <div class="skills-marquee" style="display: flex; width: max-content; animation: scrollMarquee 40s linear infinite;">
+        <!-- Track 1 -->
+        <div class="marquee-track" style="display: flex; gap: 40px; padding-right: 40px;">
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" style="width: 20px; height: 20px;" /> MongoDB</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" style="width: 20px; height: 20px; filter: invert(1);"/> Express</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" style="width: 20px; height: 20px;" /> Tailwind</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" style="width: 20px; height: 20px;" /> TypeScript</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" style="width: 20px; height: 20px;" /> Git</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" style="width: 20px; height: 20px;" /> Docker</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" style="width: 24px; height: 20px; filter: invert(1);"/> AWS</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" style="width: 20px; height: 20px;" /> React</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" style="width: 20px; height: 20px;" /> Node.js</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" style="width: 20px; height: 20px;" /> Google Cloud Console</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width: 20px; height: 20px;" /> Python</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><span style="font-weight:bold; color: #f39c12;">V</span> Vertex AI</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" style="width: 20px; height: 20px;" /> SQL</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;">🚀 CI/CD</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;">☁️ Cloud Computing</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;">🧠 Machine Learning</span>
+        </div>
+        <!-- Track 2 (Duplicate for seamless loop) -->
+        <div class="marquee-track" style="display: flex; gap: 40px; padding-right: 40px;">
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" style="width: 20px; height: 20px;" /> MongoDB</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" style="width: 20px; height: 20px; filter: invert(1);"/> Express</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" style="width: 20px; height: 20px;" /> Tailwind</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" style="width: 20px; height: 20px;" /> TypeScript</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" style="width: 20px; height: 20px;" /> Git</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" style="width: 20px; height: 20px;" /> Docker</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" style="width: 24px; height: 20px; filter: invert(1);"/> AWS</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" style="width: 20px; height: 20px;" /> React</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" style="width: 20px; height: 20px;" /> Node.js</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" style="width: 20px; height: 20px;" /> Google Cloud Console</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width: 20px; height: 20px;" /> Python</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><span style="font-weight:bold; color: #f39c12;">V</span> Vertex AI</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" style="width: 20px; height: 20px;" /> SQL</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;">🚀 CI/CD</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;">☁️ Cloud Computing</span>
+          <span class="marquee-item" style="display: flex; align-items: center; gap: 8px; color: #999; font-weight: 500; font-size: 0.95rem; white-space: nowrap;">🧠 Machine Learning</span>
         </div>
       </div>
     </div>

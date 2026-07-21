@@ -39,6 +39,11 @@
   to   { opacity: 1; transform: scale(1); }
 }
 
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ── Decorative ── */
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
