@@ -133,8 +133,14 @@ small {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: var(--border-glass);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
+  padding: 30px;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-glow);
 }
 
 /* ── Gradient Text ── */
