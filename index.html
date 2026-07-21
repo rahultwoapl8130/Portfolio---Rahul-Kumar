@@ -73,6 +73,13 @@
 </head>
 
 <body>
+  <!-- ==========================================
+       GLOBAL BACKGROUND ANIMATION
+  ========================================== -->
+  <div class="global-bg-animation">
+    <div class="global-fig fig-1"></div>
+    <div class="global-fig fig-2"></div>
+  </div>
 
   <!-- ============================================
        PRELOADER
@@ -573,25 +580,7 @@
          PROJECTS SECTION
     ========================================== -->
     <section id="projects" class="projects section-padding" style="padding-top: 60px; position: relative; overflow: hidden;">
-      <!-- Floating Background Figures -->
-      <div class="floating-fig fig-1"></div>
-      <div class="floating-fig fig-2"></div>
       <style>
-        .floating-fig {
-          position: absolute;
-          border-radius: 50%;
-          filter: blur(80px);
-          opacity: 0.4;
-          z-index: 0;
-          animation: floatFig 15s infinite alternate ease-in-out;
-        }
-        .fig-1 { width: 300px; height: 300px; background: var(--accent-primary); top: -50px; left: -100px; }
-        .fig-2 { width: 400px; height: 400px; background: var(--accent-secondary); bottom: 100px; right: -150px; animation-duration: 20s; }
-        @keyframes floatFig {
-          0% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(50px, 50px) scale(1.1); }
-          100% { transform: translate(-30px, 100px) scale(0.9); }
-        }
         @keyframes floatNode {
           0% { transform: translateY(0); }
           100% { transform: translateY(-10px); }

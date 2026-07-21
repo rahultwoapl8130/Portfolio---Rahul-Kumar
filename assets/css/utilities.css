@@ -912,3 +912,47 @@ small {
   gap: 12px;
   border-top: var(--border-glass);
 }
+
+/* ── Global Animated Background Glows ── */
+.global-bg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.global-fig {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.35;
+  animation: floatGlobalFig 20s infinite alternate ease-in-out;
+}
+.global-fig.fig-1 {
+  width: 40vw;
+  height: 40vw;
+  min-width: 300px;
+  min-height: 300px;
+  background: var(--accent-primary);
+  top: -10%;
+  left: -10%;
+}
+.global-fig.fig-2 {
+  width: 50vw;
+  height: 50vw;
+  min-width: 400px;
+  min-height: 400px;
+  background: var(--accent-secondary);
+  bottom: -10%;
+  right: -10%;
+  animation-duration: 25s;
+}
+
+@keyframes floatGlobalFig {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(5vw, 5vh) scale(1.1); }
+  100% { transform: translate(-3vw, 10vh) scale(0.9); }
+}
