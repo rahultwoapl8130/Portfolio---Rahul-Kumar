@@ -11,23 +11,10 @@
   };
 
   const initThemeToggle = () => {
-    const btn = window.qs('#theme-toggle');
     const html = document.documentElement;
-
-    // Load saved preference or default to dark
-    const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
-    html.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(btn, savedTheme);
-
-    if (!btn) return;
-
-    btn.addEventListener('click', () => {
-      const current = html.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', next);
-      localStorage.setItem('portfolio-theme', next);
-      updateThemeIcon(btn, next);
-    });
+    // Always force premium dark mode
+    html.setAttribute('data-theme', 'dark');
+    localStorage.setItem('portfolio-theme', 'dark');
   };
 
   document.addEventListener('DOMContentLoaded', initThemeToggle);
