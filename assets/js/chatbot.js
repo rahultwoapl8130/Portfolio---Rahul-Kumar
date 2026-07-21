@@ -36,18 +36,31 @@ document.addEventListener('DOMContentLoaded', () => {
   // State
   let isFirstOpen = true;
 
+  function playTickSound() {
+    try {
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const osc = ctx.createOscillator();
+      const gainNode = ctx.createGain();
+      osc.connect(gainNode);
+      gainNode.connect(ctx.destination);
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(800, ctx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(10, ctx.currentTime + 0.05);
+      gainNode.gain.setValueAtTime(0.5, ctx.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.05);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.05);
+    } catch (e) { console.log(e); }
+  }
+
   // Toggle chat
   toggleBtn.addEventListener('click', () => {
+    playTickSound();
     chatWindow.classList.add('active');
     toggleBtn.style.transform = 'scale(0)';
     if (isFirstOpen) {
       setTimeout(() => {
-        const hour = new Date().getHours();
-        let greeting = 'Good evening';
-        if (hour < 12) greeting = 'Good morning';
-        else if (hour < 17) greeting = 'Good afternoon';
-        
-        addBotMessage(`${greeting}! Hello, I am Rahul Kumar's AI assistant. 👋 What would you like to know about me, my projects, or my skills?`);
+        addBotMessage("Hi there! I'm Rahul Kumar. I'm here to help you learn more about my work and expertise. What's on your mind?");
       }, 500);
       isFirstOpen = false;
     }
