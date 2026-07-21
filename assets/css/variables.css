@@ -51,17 +51,17 @@
   --bg-primary:       #f8fafc;
   --bg-secondary:     #ffffff;
   --bg-tertiary:      #f1f5f9;
-  --bg-card:          rgba(255, 255, 255, 0.9);
-  --bg-glass:         rgba(255, 255, 255, 0.7);
+  --bg-card:          rgba(255, 255, 255, 0.85);
+  --bg-glass:         rgba(255, 255, 255, 0.55);
   --text-primary:     #0f172a;
   --text-secondary:   #475569;
   --text-muted:       #64748b;
 
-  --border-glass:     1px solid rgba(0, 0, 0, 0.05);
-  --shadow-sm:        0 2px 10px rgba(0, 0, 0, 0.05);
-  --shadow-md:        0 8px 30px rgba(0, 0, 0, 0.08);
-  --shadow-lg:        0 20px 60px rgba(0, 0, 0, 0.1);
-  --shadow-glow:      0 0 20px rgba(192, 38, 211, 0.15);
+  --border-glass:     1px solid rgba(192, 38, 211, 0.25);
+  --shadow-sm:        0 8px 32px rgba(192, 38, 211, 0.05);
+  --shadow-md:        0 10px 40px rgba(0, 0, 0, 0.08);
+  --shadow-lg:        0 20px 60px rgba(192, 38, 211, 0.1);
+  --shadow-glow:      0 0 20px rgba(192, 38, 211, 0.2);
 }
 
 
