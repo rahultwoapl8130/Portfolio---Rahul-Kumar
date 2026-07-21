@@ -98,8 +98,12 @@
   }
 
   .hero-image {
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    height: auto;
+  }
+  .code-content {
+    font-size: 0.85rem !important;
+    padding: 16px !important;
   }
 
   .hero-description {
@@ -220,8 +224,12 @@
   }
 
   .hero-image {
-    width: 180px;
-    height: 180px;
+    width: 100%;
+    height: auto;
+  }
+  .code-content {
+    font-size: 0.75rem !important;
+    padding: 12px !important;
   }
 
   .hero-buttons {
