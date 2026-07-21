@@ -42,7 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleBtn.style.transform = 'scale(0)';
     if (isFirstOpen) {
       setTimeout(() => {
-        addBotMessage("Hi! I'm Rahul's AI assistant. 👋 What would you like to know about him?");
+        const hour = new Date().getHours();
+        let greeting = 'Good evening';
+        if (hour < 12) greeting = 'Good morning';
+        else if (hour < 17) greeting = 'Good afternoon';
+        
+        addBotMessage(`${greeting}! Hello, I am Rahul Kumar's AI assistant. 👋 What would you like to know about me, my projects, or my skills?`);
       }, 500);
       isFirstOpen = false;
     }

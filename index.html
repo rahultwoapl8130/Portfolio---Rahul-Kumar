@@ -714,7 +714,7 @@
             <div class="timeline-content glass-card">
               <span class="timeline-date">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                2024 - 2026
+                <span class="typed-running-year"></span>
               </span>
               <h3>Data Science & ML Project Portfolio</h3>
               <p class="timeline-company">
@@ -735,7 +735,7 @@
             <div class="timeline-content glass-card">
               <span class="timeline-date">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                2023
+                2025
               </span>
               <h3>Data Analytics Intern</h3>
               <p class="timeline-company">
@@ -771,7 +771,7 @@
             <div class="timeline-content glass-card">
               <span class="timeline-date">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                2023 - 2025
+                2024 - 2026
               </span>
               <h3>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
@@ -792,7 +792,7 @@
             <div class="timeline-content glass-card">
               <span class="timeline-date">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                2019 - 2022
+                2020 - 2024
               </span>
               <h3>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
@@ -1458,6 +1458,29 @@
       modal.style.display = 'none';
       document.body.style.overflow = 'auto';
     }
+
+    // Custom typing effect for running year
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearEl = document.querySelector('.typed-running-year');
+      if (yearEl) {
+        const text = "2024 - 2026 (Running)";
+        let i = 0;
+        function typeWriter() {
+          if (i < text.length) {
+            yearEl.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 150);
+          } else {
+            setTimeout(() => {
+              yearEl.innerHTML = "";
+              i = 0;
+              typeWriter();
+            }, 3000);
+          }
+        }
+        typeWriter();
+      }
+    });
   </script>
 
   <!-- Scripts -->
