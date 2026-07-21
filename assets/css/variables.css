@@ -46,6 +46,23 @@
   --transition-slow:   0.5s ease;
 }
 
+/* ── Light Theme ── */
+[data-theme='light'] {
+  --bg-primary:     #fafafa;
+  --bg-secondary:   #f4f4f5;
+  --bg-tertiary:    #e4e4e7;
+  --bg-card:        rgba(139, 92, 246, 0.05);
+  --bg-glass:       rgba(255, 255, 255, 0.8);
+  --text-primary:   #0f172a;
+  --text-secondary: #475569;
+  --text-muted:     #94a3b8;
+  --shadow-sm:      0 2px 10px rgba(139, 92, 246, 0.1);
+  --shadow-md:      0 8px 30px rgba(139, 92, 246, 0.15);
+  --shadow-lg:      0 20px 60px rgba(139, 92, 246, 0.2);
+  --shadow-glow:    0 0 20px rgba(139, 92, 246, 0.15);
+  --border-glass:   1px solid rgba(139, 92, 246, 0.15);
+}
+
 /* ===================================================================
    CUSTOM SCROLLBAR
    =================================================================== */
