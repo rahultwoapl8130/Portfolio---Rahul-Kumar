@@ -143,6 +143,14 @@ small {
   box-shadow: var(--shadow-glow);
 }
 
+/* ── Stack Pills ── */
+.stack-pill:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: var(--accent-primary) !important;
+  transform: translateY(-2px);
+  color: #fff !important;
+}
+
 /* ── Gradient Text ── */
 .gradient-text {
   background: var(--gradient-primary);
