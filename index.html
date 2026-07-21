@@ -701,52 +701,78 @@
     <section id="experience" class="experience section-padding">
       <div class="container">
         <!-- Section Header -->
-        <div class="section-header " data-aos="fade-up">
-          <h2 class="section-title">My <span class="gradient-text">Experience</span></h2>
-          <p class="section-subtitle">My professional journey and growth so far.</p>
+        <div class="section-header" style="text-align: center; margin-bottom: 50px;" data-aos="fade-up">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 15px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            <span style="color: var(--accent-primary); font-size: 0.85rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;">Experience</span>
+          </div>
+          <h2 class="section-title" style="font-size: 3rem; font-weight: 700; margin-bottom: 20px; color: white;">Professional <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto; color: #a0a0a0;">My journey in the tech industry, building impactful solutions and growing with every challenge.</p>
         </div>
 
-        <div class="timeline">
+        <div class="experience-container" style="display: flex; flex-direction: column; gap: 40px; max-width: 1000px; margin: 0 auto;">
+          
           <!-- Experience 1 -->
-          <div class="timeline-item " data-aos="fade-left">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <span class="timeline-date">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                <span class="moving-year">2024 - 2026</span>
-              </span>
-              <h3>Data Science & ML Project Portfolio</h3>
-              <p class="timeline-company">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          <div class="exp-card glass-card" style="padding: 40px; border-radius: 20px; text-align: left;" data-aos="fade-up">
+            <h3 style="font-size: 1.8rem; font-weight: 700; color: white; margin-bottom: 15px;">Data Science & ML Project Portfolio</h3>
+            <div style="display: flex; gap: 20px; color: #a0a0a0; font-size: 0.95rem; margin-bottom: 25px; flex-wrap: wrap;">
+              <span style="display: flex; align-items: center; gap: 6px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
                 Independent Project Work
-              </p>
-              <ul>
-                <li><strong>Customer Segmentation:</strong> Built an unsupervised ML system (SmartCart) using K-Means and PCA to cluster 2,240 records, establishing a data-foundation for targeted marketing.</li>
-                <li><strong>Business Intelligence:</strong> Developed automated Power BI dashboards (Adventure Works) consolidating complex sales datasets to enable rapid, data-driven decision making.</li>
-                <li><strong>Predictive Modeling:</strong> Created predictive models for loan approval and customer churn, focusing on balancing model complexity with high business interpretability.</li>
-              </ul>
+              </span>
+              <span style="display: flex; align-items: center; gap: 6px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2024 - 2026
+              </span>
+              <span style="display: flex; align-items: center; gap: 6px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Remote
+              </span>
             </div>
+            
+            <p style="color: #bbb; line-height: 1.7; margin-bottom: 25px; font-size: 1.05rem;">
+              Developing and deploying end-to-end Machine Learning pipelines, focusing on predictive modeling, customer segmentation, and automated business intelligence systems.
+            </p>
+            
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+              <span style="color: white; font-weight: 700; font-size: 1.1rem;">&lt;/&gt;</span>
+              <h4 style="color: white; font-size: 1.1rem; font-weight: 600; margin: 0;">Key Achievements</h4>
+            </div>
+            
+            <ul style="color: #bbb; line-height: 1.7; padding-left: 20px; font-size: 1rem; display: flex; flex-direction: column; gap: 10px;">
+              <li><strong>Customer Segmentation:</strong> Built an unsupervised ML system (SmartCart) using K-Means and PCA to cluster 2,240 records, establishing a data-foundation for targeted marketing.</li>
+              <li><strong>Business Intelligence:</strong> Developed automated Power BI dashboards (Adventure Works) consolidating complex sales datasets to enable rapid, data-driven decision making.</li>
+              <li><strong>Predictive Modeling:</strong> Created predictive models for loan approval and customer churn, focusing on balancing model complexity with high business interpretability.</li>
+            </ul>
           </div>
 
           <!-- Experience 2 -->
-          <div class="timeline-item " data-aos="fade-right">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <span class="timeline-date">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                <span class="moving-year">2025</span>
-              </span>
-              <h3>Data Analytics Intern</h3>
-              <p class="timeline-company">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          <div class="exp-card glass-card" style="padding: 40px; border-radius: 20px; text-align: left;" data-aos="fade-up" data-aos-delay="100">
+            <h3 style="font-size: 1.8rem; font-weight: 700; color: white; margin-bottom: 15px;">Data Analytics Intern</h3>
+            <div style="display: flex; gap: 20px; color: #a0a0a0; font-size: 0.95rem; margin-bottom: 25px; flex-wrap: wrap;">
+              <span style="display: flex; align-items: center; gap: 6px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
                 Confidential Client
-              </p>
-              <ul>
-                <li><strong>Business Intelligence:</strong> Assisted in engineering SQL queries and BI models to perform business data analysis, supporting actionable insights discovery.</li>
-                <li><strong>Stakeholder Reporting:</strong> Contributed to the creation of automated reports and executive dashboards, which helped reduce manual reporting time by 30%.</li>
-                <li><strong>Trend Forecasting:</strong> Supported data visualization initiatives to map historical trends for Q3 marketing strategies.</li>
-              </ul>
+              </span>
+              <span style="display: flex; align-items: center; gap: 6px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2025
+              </span>
             </div>
+            
+            <p style="color: #bbb; line-height: 1.7; margin-bottom: 25px; font-size: 1.05rem;">
+              Assisted in engineering SQL queries and BI models to perform business data analysis, supporting actionable insights discovery.
+            </p>
+            
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+              <span style="color: white; font-weight: 700; font-size: 1.1rem;">&lt;/&gt;</span>
+              <h4 style="color: white; font-size: 1.1rem; font-weight: 600; margin: 0;">Key Contributions</h4>
+            </div>
+            
+            <ul style="color: #bbb; line-height: 1.7; padding-left: 20px; font-size: 1rem; display: flex; flex-direction: column; gap: 10px;">
+              <li><strong>Stakeholder Reporting:</strong> Contributed to the creation of automated reports and executive dashboards, which helped reduce manual reporting time by 30%.</li>
+              <li><strong>Trend Forecasting:</strong> Supported data visualization initiatives to map historical trends for Q3 marketing strategies.</li>
+            </ul>
           </div>
         </div>
       </div>
