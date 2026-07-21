@@ -51,11 +51,12 @@
             const color = colors[nameCharIndex % colors.length];
             span.style.color = color;
             span.style.opacity = '0';
-            span.style.animation = 'fadeInChar 0.1s forwards';
+            span.style.display = 'inline-block';
+            span.style.animation = 'fadeInChar 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards';
           }
           nameContainer.appendChild(span);
           nameCharIndex++;
-          setTimeout(typeName, 150); // Typing speed for name
+          setTimeout(typeName, 100); // Faster name typing for wave effect
         }
       };
       setTimeout(typeName, 500);
@@ -80,11 +81,12 @@
                 const color = colors[charIdx % colors.length];
                 span.style.color = color;
                 span.style.opacity = '0';
-                span.style.animation = 'fadeInChar 0.1s forwards';
+                span.style.display = 'inline-block';
+                span.style.animation = 'fadeInChar 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards';
               }
               expHeader.appendChild(span);
               charIdx++;
-              setTimeout(typeExp, 80); // Typing speed
+              setTimeout(typeExp, 70); // Smooth wave typing speed
             }
           };
           setTimeout(typeExp, 300);
@@ -98,7 +100,7 @@
     if (!document.getElementById('typing-keyframes')) {
       const style = document.createElement('style');
       style.id = 'typing-keyframes';
-      style.innerHTML = `@keyframes fadeInChar { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }`;
+      style.innerHTML = `@keyframes fadeInChar { 0% { opacity: 0; transform: translateY(10px) scale(0.9); filter: blur(10px); } 100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0px); } }`;
       document.head.appendChild(style);
     }
   };
