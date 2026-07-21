@@ -2,54 +2,70 @@
 
 (function () {
   const initTypingAnimation = () => {
-    const el = window.qs('#typing-text');
-    if (!el) return;
+    const nameContainer = window.qs('#hero-typing-name-container');
+    const oldRoleText = window.qs('#typing-text');
+    
+    // Animate Roles
+    if (oldRoleText) {
+      const roles = ['Data Scientist', 'Machine Learning Engineer', 'Business Analyst', 'Data Analyst'];
+      const typeSpeed = 100, deleteSpeed = 50, pauseTime = 2000;
+      let roleIndex = 0, charIndex = 0, isDeleting = false;
+      const tick = () => {
+        const currentRole = roles[roleIndex];
+        if (isDeleting) {
+          charIndex--;
+          oldRoleText.textContent = currentRole.substring(0, charIndex);
+        } else {
+          charIndex++;
+          oldRoleText.textContent = currentRole.substring(0, charIndex);
+        }
+        let delay = isDeleting ? deleteSpeed : typeSpeed;
+        if (!isDeleting && charIndex === currentRole.length) {
+          delay = pauseTime;
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+          delay = 400;
+        }
+        setTimeout(tick, delay);
+      };
+      tick();
+    }
 
-    const roles = [
-      'Data Scientist',
-      'Machine Learning Engineer',
-      'Business Analyst',
-      'Data Analyst'
-    ];
+    // Animate Name: Rahul Kumar
+    if (nameContainer) {
+      const name = "Rahul Kumar";
+      const colors = ['#ff5e57', '#ffdd59', '#0be881', '#4bcffa', '#3c40c6', '#f53b57', '#ffa801', '#0fb9b1', '#575fcf', '#ef5777'];
+      let nameCharIndex = 0;
+      nameContainer.innerHTML = ''; // clear initially
 
-    const typeSpeed = 100;   // ms per character
-    const deleteSpeed = 50;  // ms per character
-    const pauseTime = 2000;  // ms pause after full word typed
-
-    let roleIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-
-    const tick = () => {
-      const currentRole = roles[roleIndex];
-
-      if (isDeleting) {
-        charIndex--;
-        el.textContent = currentRole.substring(0, charIndex);
-      } else {
-        charIndex++;
-        el.textContent = currentRole.substring(0, charIndex);
+      const typeName = () => {
+        if (nameCharIndex < name.length) {
+          const char = name[nameCharIndex];
+          const span = document.createElement('span');
+          span.textContent = char;
+          if (char !== ' ') {
+            // Apply a random or sequential color
+            const color = colors[nameCharIndex % colors.length];
+            span.style.color = color;
+            span.style.opacity = '0';
+            span.style.animation = 'fadeInChar 0.1s forwards';
+          }
+          nameContainer.appendChild(span);
+          nameCharIndex++;
+          setTimeout(typeName, 150); // Typing speed for name
+        }
+      };
+      // Add keyframes dynamically if not present
+      if (!document.getElementById('typing-keyframes')) {
+        const style = document.createElement('style');
+        style.id = 'typing-keyframes';
+        style.innerHTML = `@keyframes fadeInChar { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }`;
+        document.head.appendChild(style);
       }
-
-      let delay = isDeleting ? deleteSpeed : typeSpeed;
-
-      // Finished typing the full word
-      if (!isDeleting && charIndex === currentRole.length) {
-        delay = pauseTime;
-        isDeleting = true;
-      }
-
-      // Finished deleting – move to next role
-      if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
-        delay = 400; // short pause before typing next word
-      }
-
-      setTimeout(tick, delay);
-    };
-
-    tick();
+      setTimeout(typeName, 500);
+    }
   };
 
   document.addEventListener('DOMContentLoaded', initTypingAnimation);
