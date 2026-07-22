@@ -33,11 +33,11 @@
       tick();
     }
 
-    const colors = ['#ff5e57', '#ffdd59', '#0be881', '#4bcffa', '#3c40c6', '#f53b57', '#ffa801', '#0fb9b1', '#575fcf', '#ef5777'];
+    const colors = ['#ffffff', '#c026d3', '#a29bfe'];
 
-    // Animate Name: Rahul Kumar
+    // Animate Name: RAHUL KUMAR
     if (nameContainer) {
-      const name = "Rahul Kumar";
+      const name = "RAHUL KUMAR";
       let nameCharIndex = 0;
       nameContainer.innerHTML = ''; // clear initially
 

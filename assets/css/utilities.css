@@ -149,20 +149,29 @@ small {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: var(--bg-card);
-  border: 1px solid rgba(147, 51, 234, 0.2);
-  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 18px;
   border-radius: 100px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  color: var(--text-secondary);
-  transition: all 0.3s ease;
+  color: #f1f5f9;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 .stack-pill:hover {
-  background: var(--bg-glass);
-  border-color: var(--accent-primary);
-  transform: translateY(-2px);
-  color: var(--text-primary);
+  transform: translateY(-3px) scale(1.05);
+  background: rgba(192, 38, 211, 0.15);
+  border-color: rgba(192, 38, 211, 0.5);
+  box-shadow: 0 5px 15px rgba(192, 38, 211, 0.3);
+  color: #fff;
+}
+.stack-pill:active {
+  transform: scale(0.95);
+  background: rgba(192, 38, 211, 0.25);
+  box-shadow: 0 0 10px rgba(192, 38, 211, 0.5);
 }
 
 /* ── Service Cards Premium Glow ── */
@@ -593,6 +602,13 @@ small {
   position: relative;
   animation: pulse 1.6s ease-in-out infinite;
 }
+
+/* ── Snake Light Border Animation ── */
+@keyframes snake-rotate { 100% { transform: translate(-50%, -50%) rotate(1turn); } }
+.glass-card, .snake-border { position: relative; overflow: hidden; border: none !important; }
+.glass-card::before, .snake-border::before { content: ''; position: absolute; top: 50%; left: 50%; width: 250%; height: 250%; background: conic-gradient(from 0deg, transparent 75%, var(--accent-primary) 100%); animation: snake-rotate 4s linear infinite; transform: translate(-50%, -50%); z-index: -2; }
+.glass-card::after, .snake-border::after { content: ''; position: absolute; inset: 1.5px; background: rgba(10, 10, 10, 0.9); backdrop-filter: blur(16px); border-radius: inherit; z-index: -1; }
+.glass-card > *, .snake-border > * { position: relative; z-index: 1; }
 
 .preloader__logo::before {
   content: '';
