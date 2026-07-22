@@ -54,8 +54,15 @@
             const color = currentWordIdx < midPoint ? '#ffffff' : 'var(--accent-primary)';
             span.style.color = color;
             span.style.opacity = '0';
+            span.style.transition = 'opacity 0.2s ease-in, transform 0.2s ease-out';
+            span.style.transform = 'translateY(5px)';
             span.style.display = 'inline-block';
-            span.style.animation = 'fadeInChar 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards';
+            
+            // Force browser reflow and trigger transition
+            setTimeout(() => {
+              span.style.opacity = '1';
+              span.style.transform = 'translateY(0)';
+            }, 10);
           }
           nameContainer.appendChild(span);
           nameCharIndex++;
@@ -95,8 +102,15 @@
                   const color = currentWordIdx < midPoint ? '#ffffff' : 'var(--accent-primary)';
                   span.style.color = color;
                   span.style.opacity = '0';
+                  span.style.transition = 'opacity 0.2s ease-in, transform 0.2s ease-out';
+                  span.style.transform = 'translateY(5px)';
                   span.style.display = 'inline-block';
-                  span.style.animation = 'fadeInChar 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards';
+                  
+                  // Force browser reflow and trigger transition
+                  setTimeout(() => {
+                    span.style.opacity = '1';
+                    span.style.transform = 'translateY(0)';
+                  }, 10);
                 }
                 el.appendChild(span);
                 charIdx++;
