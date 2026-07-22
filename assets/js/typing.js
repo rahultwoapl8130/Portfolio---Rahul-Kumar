@@ -114,13 +114,6 @@
       });
     }
 
-    // Add keyframes dynamically if not present
-    if (!document.getElementById('typing-keyframes')) {
-      const style = document.createElement('style');
-      style.id = 'typing-keyframes';
-      style.innerHTML = `@keyframes fadeInChar { 0% { opacity: 0; transform: translateY(10px) scale(0.9); filter: blur(10px); } 100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0px); } }`;
-      document.head.appendChild(style);
-    }
   };
 
   document.addEventListener('DOMContentLoaded', initTypingAnimation);
