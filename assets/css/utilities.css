@@ -10,7 +10,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 100px;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
@@ -993,3 +992,5 @@ small {
 .stack-pill { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important; cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.1) !important; }
 .stack-pill:hover { transform: translateY(-3px) scale(1.05) !important; background: rgba(192, 38, 211, 0.15) !important; border-color: rgba(192, 38, 211, 0.5) !important; box-shadow: 0 5px 15px rgba(192, 38, 211, 0.3) !important; }
 .stack-pill:active { transform: scale(0.95) !important; background: rgba(192, 38, 211, 0.25) !important; box-shadow: 0 0 10px rgba(192, 38, 211, 0.5) !important; }
+
+@keyframes fadeInChar { 0% { opacity: 0; transform: translateY(10px); } 100% { opacity: 1; transform: translateY(0); } }
