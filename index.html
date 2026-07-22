@@ -1523,14 +1523,14 @@
 
     // Initialize Lenis
     const lenis = new Lenis({
-      duration: 3.5,
-      easing: (t) => 1 - Math.pow(1 - t, 4), // Quartic ease out for an extra smooth glide
+      duration: 1.5,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       direction: 'vertical',
       gestureDirection: 'vertical',
       smooth: true,
-      smoothTouch: true, 
-      touchMultiplier: 2.5,
-      wheelMultiplier: 1.2,
+      smoothTouch: false, // Native mobile touch scroll is much smoother and prevents jitter
+      touchMultiplier: 1.5,
+      wheelMultiplier: 1.0,
     });
 
     // Handle anchor links for Lenis
