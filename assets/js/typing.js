@@ -62,38 +62,49 @@
       setTimeout(typeName, 500);
     }
 
-    // Animate Professional Experience Header
-    const expHeader = document.getElementById('experience-typing-header');
-    if (expHeader) {
-      const textToType = "Professional Experience";
-      expHeader.innerHTML = ''; // clear initially
-      expHeader.style.minHeight = '1.2em';
-
-      const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          let charIdx = 0;
-          const typeExp = () => {
-            if (charIdx < textToType.length) {
-              const char = textToType[charIdx];
-              const span = document.createElement('span');
-              span.textContent = char;
-              if (char !== ' ') {
-                const color = colors[charIdx % colors.length];
-                span.style.color = color;
-                span.style.opacity = '0';
-                span.style.display = 'inline-block';
-                span.style.animation = 'fadeInChar 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards';
+    // ----------------------------------------------------
+    // Universal "Smooth Wave" Typing for All Headings
+    // ----------------------------------------------------
+    const typingHeadings = document.querySelectorAll('.typing-heading');
+    if (typingHeadings.length > 0) {
+      const headingObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const textToType = el.getAttribute('data-text');
+            if (!textToType || el.classList.contains('typing-started')) return;
+            
+            el.classList.add('typing-started');
+            el.innerHTML = ''; // clear initially
+            el.style.minHeight = '1.2em';
+            
+            let charIdx = 0;
+            const typeHeading = () => {
+              if (charIdx < textToType.length) {
+                const char = textToType[charIdx];
+                const span = document.createElement('span');
+                span.textContent = char;
+                if (char !== ' ') {
+                  const color = colors[charIdx % colors.length];
+                  span.style.color = color;
+                  span.style.opacity = '0';
+                  span.style.display = 'inline-block';
+                  span.style.animation = 'fadeInChar 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards';
+                }
+                el.appendChild(span);
+                charIdx++;
+                setTimeout(typeHeading, 60); // Smooth wave typing speed
               }
-              expHeader.appendChild(span);
-              charIdx++;
-              setTimeout(typeExp, 70); // Smooth wave typing speed
-            }
-          };
-          setTimeout(typeExp, 300);
-          observer.disconnect(); // Only play once
-        }
+            };
+            setTimeout(typeHeading, 200); // delay before starting
+            headingObserver.unobserve(el); // Only play once
+          }
+        });
       }, { threshold: 0.5 });
-      observer.observe(expHeader);
+      
+      typingHeadings.forEach(heading => {
+        headingObserver.observe(heading);
+      });
     }
 
     // Add keyframes dynamically if not present

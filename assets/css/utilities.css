@@ -251,10 +251,17 @@ small {
   height: auto;
   min-height: 120%;
   object-fit: cover;
-  transition: transform 3s ease-in-out;
+  animation: runProjectImage 10s linear infinite alternate;
 }
-.premium-project-card:hover .scrolling-image {
-  transform: translateY(calc(-100% + 220px));
+
+@keyframes runProjectImage {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(calc(-100% + 220px)); }
+}
+
+/* Remove hover dependency since it now runs automatically */
+.premium-project-card .scrolling-image {
+  animation: runProjectImage 10s linear infinite alternate;
 }
 .project-info {
   padding: 24px;
@@ -965,3 +972,8 @@ small {
   50% { transform: translate(5vw, 5vh) scale(1.1); }
   100% { transform: translate(-3vw, 10vh) scale(0.9); }
 }
+
+/* Stack Pill Interactive Effects */
+.stack-pill { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important; cursor: pointer; border: 1px solid rgba(255, 255, 255, 0.1) !important; }
+.stack-pill:hover { transform: translateY(-3px) scale(1.05) !important; background: rgba(192, 38, 211, 0.15) !important; border-color: rgba(192, 38, 211, 0.5) !important; box-shadow: 0 5px 15px rgba(192, 38, 211, 0.3) !important; }
+.stack-pill:active { transform: scale(0.95) !important; background: rgba(192, 38, 211, 0.25) !important; box-shadow: 0 0 10px rgba(192, 38, 211, 0.5) !important; }
