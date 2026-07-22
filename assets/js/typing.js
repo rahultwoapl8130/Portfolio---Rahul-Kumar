@@ -47,8 +47,11 @@
           const span = document.createElement('span');
           span.textContent = char;
           if (char !== ' ') {
-            // Apply a random or sequential color
-            const color = colors[nameCharIndex % colors.length];
+            // First half white, second half purple
+            const words = name.split(' ');
+            const midPoint = Math.ceil(words.length / 2);
+            let currentWordIdx = name.substring(0, nameCharIndex).split(' ').length - 1;
+            const color = currentWordIdx < midPoint ? '#ffffff' : 'var(--accent-primary)';
             span.style.color = color;
             span.style.opacity = '0';
             span.style.display = 'inline-block';
@@ -79,13 +82,17 @@
             el.style.minHeight = '1.2em';
             
             let charIdx = 0;
+            const words = textToType.split(' ');
+            const midPoint = Math.ceil(words.length / 2);
+            
             const typeHeading = () => {
               if (charIdx < textToType.length) {
                 const char = textToType[charIdx];
                 const span = document.createElement('span');
                 span.textContent = char;
                 if (char !== ' ') {
-                  const color = colors[charIdx % colors.length];
+                  let currentWordIdx = textToType.substring(0, charIdx).split(' ').length - 1;
+                  const color = currentWordIdx < midPoint ? '#ffffff' : 'var(--accent-primary)';
                   span.style.color = color;
                   span.style.opacity = '0';
                   span.style.display = 'inline-block';
